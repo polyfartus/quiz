@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<questions>
+    <question 
+        text = "A physics instructor walks across the classroom at a constant velocity of 2.0m/sec. He tosses a tennis ball in the air at 2.0m/sec. At what angle from the vertical should he throw it so that the ball will land in his hand 0.40 seconds later?"
+        answer1 = "0"
+        answer2 = "45"
+        answer3 = "-45"
+        answer4 = "you can’t tell from the information given"
+        answer = "1"
+    />
+    <question 
+        text = "The picture shows the parabolic trajectory of a golf ball as it flies from the tee to the green. What is the direction of the ball’s velocity at its highest point in flight?"
+        answer1 = "The velocity is zero."
+        answer2 = "The velocity is to the right."
+        answer3 = "The velocity is to the left."
+        answer4 = "The velocity is down and to the left."
+        answer = "2"
+    />
+</questions>
+
