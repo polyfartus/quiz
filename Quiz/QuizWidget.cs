@@ -37,17 +37,45 @@ namespace Quiz
         void ShowQuestion()
         {
             int index = this.quiz.Questions.IndexOf(this.current);
-            this.textview1.Buffer.Text = "" + (index+1) + ".  " + this.current.Text;
+
+            this.textview1.Buffer.Text = "" + (index+1) + ".  " + 
+                this.current.Text + "  Points: " + this.quiz.Points;
+
             this.radiobutton1.Label = this.current.Answer1;
             this.radiobutton2.Label = this.current.Answer2;
             this.radiobutton3.Label = this.current.Answer3;
             this.radiobutton4.Label = this.current.Answer4;
             this.textStatus.Buffer.Text = "";
             this.radiobutton1.Active = true;
-            this.textStatus.Buffer.Text = this.current.StatusMessage;
+            this.textStatus.Buffer.Text = "\n\n\n" +
+                "Points: " + this.quiz.Points + "  \t" +
+                this.current.StatusMessage;
             SetSelected(this.current.InputAnswer);
+
+            if (this.current.IsChecked)
+            {
+                this.radiobutton1.Sensitive = false;
+                this.radiobutton2.Sensitive = false;
+                this.radiobutton3.Sensitive = false;
+                this.radiobutton4.Sensitive = false;
+                this.buttonCheck.Sensitive = false;
+            }
+            else
+            {
+                this.radiobutton1.Sensitive = true;
+                this.radiobutton2.Sensitive = true;
+                this.radiobutton3.Sensitive = true;
+                this.radiobutton4.Sensitive = true;
+                this.buttonCheck.Sensitive = true;
+            }
         }
             
+        
+        protected void OnButtonSaveClicked (object sender, EventArgs e)
+        {
+
+        }
+
         protected void OnButtonCheckClicked (object sender, EventArgs e)
         {
             Check();
@@ -114,6 +142,8 @@ namespace Quiz
             this.current.IsChecked = true;
             this.current.StatusMessage = msg;
             this.current.InputAnswer = selected;
+
+            this.ShowQuestion();
         }
 
         int GetSelected()

@@ -12,6 +12,12 @@ namespace Quiz
 
         bool isChecked;
 
+        public int Points
+        {
+            get;
+            set;
+        }
+
         public string StatusMessage
         {
             get { return this.statusMessage; }

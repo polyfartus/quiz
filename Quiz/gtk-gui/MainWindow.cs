@@ -4,13 +4,10 @@
 public partial class MainWindow
 {
 	private global::Gtk.VBox vbox1;
-	
 	private global::Quiz.FilesWidget fileswidget2;
-	
 	private global::Gtk.HBox hbox1;
-	
 	private global::Gtk.Button buttonTake;
-
+	
 	protected virtual void Build ()
 	{
 		global::Stetic.Gui.Initialize (this);
@@ -56,8 +53,8 @@ public partial class MainWindow
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();
 		}
-		this.DefaultWidth = 400;
-		this.DefaultHeight = 304;
+		this.DefaultWidth = 441;
+		this.DefaultHeight = 399;
 		this.Show ();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
 		this.buttonTake.Clicked += new global::System.EventHandler (this.OnButtonTakeClicked);

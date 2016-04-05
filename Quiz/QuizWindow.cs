@@ -16,6 +16,8 @@ namespace Quiz
 
             set { this.quizwidget1.Quiz = value; }
         }
+
+
     }
 }
 

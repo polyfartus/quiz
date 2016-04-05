@@ -2,12 +2,13 @@
 <stetic-interface>
   <configuration>
     <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
   </configuration>
   <import>
-    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <widget-library name="../bin/Debug/Quiz.exe" internal="true" />
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
   </import>
-  <widget class="Gtk.Window" id="MainWindow" design-size="400 304">
+  <widget class="Gtk.Window" id="MainWindow" design-size="441 399">
     <property name="MemberName" />
     <property name="Title" translatable="yes">Quiz</property>
     <property name="Icon">stock:gtk-edit Menu</property>
@@ -263,10 +264,26 @@
               <widget class="Gtk.Fixed" id="fixed2">
                 <property name="MemberName" />
                 <property name="HasWindow">False</property>
+                <child>
+                  <widget class="Gtk.Button" id="buttonSave">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="Type">TextOnly</property>
+                    <property name="Label" translatable="yes">Save</property>
+                    <property name="UseUnderline">True</property>
+                    <signal name="Clicked" handler="OnButtonSaveClicked" />
+                  </widget>
+                  <packing>
+                    <property name="X">5</property>
+                    <property name="Y">4</property>
+                  </packing>
+                </child>
               </widget>
               <packing>
                 <property name="Position">1</property>
                 <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
               </packing>
             </child>
             <child>
@@ -324,7 +341,7 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="Quiz.QuizWindow" design-size="400 304">
+  <widget class="Gtk.Window" id="Quiz.QuizWindow" design-size="513 362">
     <property name="MemberName" />
     <property name="Title" translatable="yes">QuizWindow</property>
     <property name="WindowPosition">CenterOnParent</property>

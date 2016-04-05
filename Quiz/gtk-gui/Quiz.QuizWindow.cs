@@ -5,9 +5,8 @@ namespace Quiz
 	public partial class QuizWindow
 	{
 		private global::Gtk.Table table1;
-		
 		private global::Quiz.QuizWidget quizwidget1;
-
+		
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);
@@ -30,8 +29,8 @@ namespace Quiz
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();
 			}
-			this.DefaultWidth = 400;
-			this.DefaultHeight = 304;
+			this.DefaultWidth = 513;
+			this.DefaultHeight = 362;
 			this.Show ();
 		}
 	}
