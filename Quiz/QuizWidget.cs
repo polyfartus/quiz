@@ -39,7 +39,8 @@ namespace Quiz
             int index = this.quiz.Questions.IndexOf(this.current);
 
             this.textview1.Buffer.Text = "" + (index+1) + ".  " + 
-                this.current.Text + "  Points: " + this.quiz.Points;
+                this.current.Text + 
+                "\n\nPoints: " + this.current.Points;
 
             this.radiobutton1.Label = this.current.Answer1;
             this.radiobutton2.Label = this.current.Answer2;
@@ -47,9 +48,10 @@ namespace Quiz
             this.radiobutton4.Label = this.current.Answer4;
             this.textStatus.Buffer.Text = "";
             this.radiobutton1.Active = true;
-            this.textStatus.Buffer.Text = "\n\n\n" +
-                "Points: " + this.quiz.Points + "  \t" +
-                this.current.StatusMessage;
+
+            this.textStatus.Buffer.Text = this.current.StatusMessage + "\n" +
+                "Points: " + this.quiz.Points + "";
+
             SetSelected(this.current.InputAnswer);
 
             if (this.current.IsChecked)
@@ -73,7 +75,18 @@ namespace Quiz
         
         protected void OnButtonSaveClicked (object sender, EventArgs e)
         {
+            var date = new System.DateTime(); 
 
+            string post = date.ToShortDateString() + date.ToShortTimeString();
+
+            post = post.Replace("/", "-");
+
+            string path = this.quiz.Path + post;
+
+            using (var stream = System.IO.File.CreateText(path))
+            {
+                this.quiz.Save(stream);
+            }
         }
 
         protected void OnButtonCheckClicked (object sender, EventArgs e)

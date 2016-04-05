@@ -59,7 +59,7 @@ public partial class MainWindow: Gtk.Window
             {
                 using (TextReader reader = File.OpenText(path))
                 {
-                    win.Quiz = QuizObject.LoadQuiz(reader);
+                    win.Quiz = QuizObject.LoadQuiz(reader, path);
                 }
 
                 win.Show();

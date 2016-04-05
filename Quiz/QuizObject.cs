@@ -50,7 +50,6 @@ namespace Quiz
             {
                 writer.WriteStartDocument();
                 writer.WriteStartElement("quiz");
-                writer.WriteElementString("path", this.Path);
                 writer.WriteElementString("points", "" + this.Points);
 
                 foreach (var q in this.questions)
@@ -72,9 +71,11 @@ namespace Quiz
             }        
         }
 
-        static public QuizObject LoadQuiz(TextReader reader)
+        static public QuizObject LoadQuiz(TextReader reader, string path)
         {
             var quiz = new QuizObject();
+
+            quiz.Path = path;
 
             var xmlReader = XmlReader.Create(reader);
             while(xmlReader.Read())
