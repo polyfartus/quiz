@@ -4,9 +4,13 @@ namespace Quiz
 {
 	public partial class QuizWindow
 	{
-		private global::Gtk.Table table1;
+		private global::Gtk.VBox vbox1;
 		
-		private global::Quiz.QuizWidget quizwidget1;
+		private global::Quiz.QuizWidget quizwidget2;
+		
+		private global::Gtk.HButtonBox hbuttonbox1;
+		
+		private global::Gtk.Button buttonClose;
 
 		protected virtual void Build ()
 		{
@@ -17,22 +21,43 @@ namespace Quiz
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			this.Modal = true;
 			// Container child Quiz.QuizWindow.Gtk.Container+ContainerChild
-			this.table1 = new global::Gtk.Table (((uint)(1)), ((uint)(1)), false);
-			this.table1.Name = "table1";
-			this.table1.RowSpacing = ((uint)(6));
-			this.table1.ColumnSpacing = ((uint)(6));
-			// Container child table1.Gtk.Table+TableChild
-			this.quizwidget1 = new global::Quiz.QuizWidget ();
-			this.quizwidget1.Events = ((global::Gdk.EventMask)(256));
-			this.quizwidget1.Name = "quizwidget1";
-			this.table1.Add (this.quizwidget1);
-			this.Add (this.table1);
+			this.vbox1 = new global::Gtk.VBox ();
+			this.vbox1.Name = "vbox1";
+			this.vbox1.Spacing = 6;
+			// Container child vbox1.Gtk.Box+BoxChild
+			this.quizwidget2 = new global::Quiz.QuizWidget ();
+			this.quizwidget2.Events = ((global::Gdk.EventMask)(256));
+			this.quizwidget2.Name = "quizwidget2";
+			this.vbox1.Add (this.quizwidget2);
+			global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.quizwidget2]));
+			w1.Position = 0;
+			// Container child vbox1.Gtk.Box+BoxChild
+			this.hbuttonbox1 = new global::Gtk.HButtonBox ();
+			this.hbuttonbox1.Name = "hbuttonbox1";
+			// Container child hbuttonbox1.Gtk.ButtonBox+ButtonBoxChild
+			this.buttonClose = new global::Gtk.Button ();
+			this.buttonClose.CanFocus = true;
+			this.buttonClose.Name = "buttonClose";
+			this.buttonClose.UseUnderline = true;
+			this.buttonClose.Label = global::Mono.Unix.Catalog.GetString ("Close");
+			this.hbuttonbox1.Add (this.buttonClose);
+			global::Gtk.ButtonBox.ButtonBoxChild w2 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox1 [this.buttonClose]));
+			w2.Expand = false;
+			w2.Fill = false;
+			this.vbox1.Add (this.hbuttonbox1);
+			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbuttonbox1]));
+			w3.Position = 1;
+			w3.Expand = false;
+			w3.Fill = false;
+			w3.Padding = ((uint)(5));
+			this.Add (this.vbox1);
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();
 			}
 			this.DefaultWidth = 513;
-			this.DefaultHeight = 362;
+			this.DefaultHeight = 359;
 			this.Show ();
+			this.buttonClose.Clicked += new global::System.EventHandler (this.OnButtonCloseClicked);
 		}
 	}
 }

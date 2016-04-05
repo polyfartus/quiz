@@ -34,7 +34,17 @@
             <property name="Spacing">6</property>
             <property name="BorderWidth">5</property>
             <child>
-              <placeholder />
+              <widget class="Gtk.TextView" id="textview1">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Editable">False</property>
+                <property name="CursorVisible">False</property>
+                <property name="Text" translatable="yes" />
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+              </packing>
             </child>
             <child>
               <placeholder />
@@ -67,7 +77,7 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Bin" id="Quiz.QuizWidget" design-size="303 359">
+  <widget class="Gtk.Bin" id="Quiz.QuizWidget" design-size="303 286">
     <property name="MemberName" />
     <property name="Visible">False</property>
     <child>
@@ -85,7 +95,6 @@
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
                 <property name="Label" translatable="yes">radiobutton1</property>
-                <property name="Active">True</property>
                 <property name="DrawIndicator">True</property>
                 <property name="HasLabel">True</property>
                 <property name="UseUnderline">True</property>
@@ -237,9 +246,6 @@
           </packing>
         </child>
         <child>
-          <placeholder />
-        </child>
-        <child>
           <widget class="Gtk.HBox" id="hbox2">
             <property name="MemberName" />
             <property name="Spacing">6</property>
@@ -264,26 +270,10 @@
               <widget class="Gtk.Fixed" id="fixed2">
                 <property name="MemberName" />
                 <property name="HasWindow">False</property>
-                <child>
-                  <widget class="Gtk.Button" id="buttonSave">
-                    <property name="MemberName" />
-                    <property name="CanFocus">True</property>
-                    <property name="Type">TextOnly</property>
-                    <property name="Label" translatable="yes">Save</property>
-                    <property name="UseUnderline">True</property>
-                    <signal name="Clicked" handler="OnButtonSaveClicked" />
-                  </widget>
-                  <packing>
-                    <property name="X">5</property>
-                    <property name="Y">4</property>
-                  </packing>
-                </child>
               </widget>
               <packing>
                 <property name="Position">1</property>
                 <property name="AutoSize">True</property>
-                <property name="Expand">False</property>
-                <property name="Fill">False</property>
               </packing>
             </child>
             <child>
@@ -331,7 +321,7 @@
           </widget>
           <packing>
             <property name="PackType">End</property>
-            <property name="Position">2</property>
+            <property name="Position">1</property>
             <property name="AutoSize">True</property>
             <property name="Expand">False</property>
             <property name="Fill">False</property>
@@ -341,29 +331,50 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="Quiz.QuizWindow" design-size="513 362">
+  <widget class="Gtk.Window" id="Quiz.QuizWindow" design-size="513 359">
     <property name="MemberName" />
     <property name="Title" translatable="yes">QuizWindow</property>
     <property name="WindowPosition">CenterOnParent</property>
     <property name="Modal">True</property>
     <child>
-      <widget class="Gtk.Table" id="table1">
+      <widget class="Gtk.VBox" id="vbox1">
         <property name="MemberName" />
-        <property name="RowSpacing">6</property>
-        <property name="ColumnSpacing">6</property>
+        <property name="Spacing">6</property>
         <child>
-          <widget class="Quiz.QuizWidget" id="quizwidget1">
+          <widget class="Quiz.QuizWidget" id="quizwidget2">
             <property name="MemberName" />
             <property name="Events">ButtonPressMask</property>
           </widget>
           <packing>
-            <property name="AutoSize">False</property>
-            <property name="XExpand">True</property>
-            <property name="XFill">True</property>
-            <property name="XShrink">False</property>
-            <property name="YExpand">True</property>
-            <property name="YFill">True</property>
-            <property name="YShrink">False</property>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.HButtonBox" id="hbuttonbox1">
+            <property name="MemberName" />
+            <property name="Size">1</property>
+            <child>
+              <widget class="Gtk.Button" id="buttonClose">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Type">TextOnly</property>
+                <property name="Label" translatable="yes">Close</property>
+                <property name="UseUnderline">True</property>
+                <signal name="Clicked" handler="OnButtonCloseClicked" />
+              </widget>
+              <packing>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+            <property name="Padding">5</property>
           </packing>
         </child>
       </widget>

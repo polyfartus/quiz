@@ -3,6 +3,7 @@ using Gtk;
 using Quiz;
 using System.Xml;
 using System.IO;
+using Pango;
 
 public partial class MainWindow: Gtk.Window
 {
@@ -11,6 +12,8 @@ public partial class MainWindow: Gtk.Window
         Build ();
 
         this.buttonTake.Sensitive = false;
+
+        this.textview1.ModifyFont(FontDescription.FromString("Courier 16"));
 
         this.fileswidget2.Selected += (sender, e) => 
             {
@@ -21,6 +24,10 @@ public partial class MainWindow: Gtk.Window
     void EnableButtons()
     {
         var path = this.fileswidget2.SelectedPath;
+
+        var score = ScoreObject2.Load();
+
+        this.textview1.Buffer.Text = "Points: " + score.Points;
 
         if (path != null)
         {

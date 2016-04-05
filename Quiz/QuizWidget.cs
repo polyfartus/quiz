@@ -75,19 +75,6 @@ namespace Quiz
         
         protected void OnButtonSaveClicked (object sender, EventArgs e)
         {
-            var date = new System.DateTime(); 
-
-            string post = "-" + date.ToShortDateString() + 
-                "-" + date.ToShortTimeString() + ".result";
-
-            post = post.Replace("/", "-");
-
-            string path = this.quiz.Path + post;
-
-            using (var stream = System.IO.File.CreateText(path))
-            {
-                this.quiz.Save(stream);
-            }
         }
 
         protected void OnButtonCheckClicked (object sender, EventArgs e)

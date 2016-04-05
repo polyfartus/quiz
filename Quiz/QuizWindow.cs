@@ -12,12 +12,33 @@ namespace Quiz
 
         public QuizObject Quiz
         {
-            get { return this.quizwidget1.Quiz; }
+            get { return this.quizwidget2.Quiz; }
 
-            set { this.quizwidget1.Quiz = value; }
+            set { this.quizwidget2.Quiz = value; }
         }
 
+        protected void OnButtonCloseClicked (object sender, EventArgs e)
+        {
+            var date = new System.DateTime(); 
 
+            string post = "-" + date.ToShortDateString() + 
+                "-" + date.ToShortTimeString() + ".result";
+
+            post = post.Replace("/", "-");
+
+            string path = this.quizwidget2.Quiz.Path + post;
+
+            using (var stream = System.IO.File.CreateText(path))
+            {
+                this.quizwidget2.Quiz.Save(stream);
+            }
+
+            var score = ScoreObject2.Load();
+
+            score.Points += this.quizwidget2.Quiz.Points;
+
+            score.Save();
+        }
     }
 }
 

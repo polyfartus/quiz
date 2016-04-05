@@ -14,16 +14,18 @@ namespace Quiz
 
         public void Save()
         {
-            var textWriter = File.OpenWrite("score.xml");
-
-            using (var writer = XmlWriter.Create(textWriter))
+            using (var textWriter = File.OpenWrite("score.xml"))
             {
+                var writer = XmlWriter.Create(textWriter);
+                
                 writer.WriteStartDocument();
                 writer.WriteStartElement("score");
                 writer.WriteElementString("value", "" + this.Points);
 
                 writer.WriteEndElement();
                 writer.WriteEndDocument();
+
+                writer.Close();
             }        
         }
 
@@ -39,14 +41,22 @@ namespace Quiz
             using (var reader = File.OpenText("score.xml"))
             {
                 var xmlReader = XmlReader.Create(reader);
+
                 while(xmlReader.Read())
                 {
                     if( (xmlReader.NodeType == XmlNodeType.Element) && 
                         (xmlReader.Name == "score"))
                     {
-                        obj.Points = int.Parse(xmlReader.GetAttribute("value"));
+                        var value = xmlReader.GetAttribute("value");
+
+                        if (value.Trim().Length > 0)
+                        {
+                            obj.Points = int.Parse(value);
+                        }
                     }
                 }
+
+                xmlReader.Close();
             }
 
             return obj;

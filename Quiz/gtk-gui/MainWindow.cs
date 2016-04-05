@@ -9,6 +9,8 @@ public partial class MainWindow
 	
 	private global::Gtk.HBox hbox1;
 	
+	private global::Gtk.TextView textview1;
+	
 	private global::Gtk.Button buttonTake;
 
 	protected virtual void Build ()
@@ -36,22 +38,31 @@ public partial class MainWindow
 		this.hbox1.Spacing = 6;
 		this.hbox1.BorderWidth = ((uint)(5));
 		// Container child hbox1.Gtk.Box+BoxChild
+		this.textview1 = new global::Gtk.TextView ();
+		this.textview1.CanFocus = true;
+		this.textview1.Name = "textview1";
+		this.textview1.Editable = false;
+		this.textview1.CursorVisible = false;
+		this.hbox1.Add (this.textview1);
+		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.textview1]));
+		w2.Position = 0;
+		// Container child hbox1.Gtk.Box+BoxChild
 		this.buttonTake = new global::Gtk.Button ();
 		this.buttonTake.CanFocus = true;
 		this.buttonTake.Name = "buttonTake";
 		this.buttonTake.UseUnderline = true;
 		this.buttonTake.Label = global::Mono.Unix.Catalog.GetString ("Take Quiz");
 		this.hbox1.Add (this.buttonTake);
-		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.buttonTake]));
-		w2.Position = 2;
-		w2.Expand = false;
-		w2.Fill = false;
-		this.vbox1.Add (this.hbox1);
-		global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox1]));
-		w3.Position = 1;
+		global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.buttonTake]));
+		w3.Position = 2;
 		w3.Expand = false;
 		w3.Fill = false;
-		w3.Padding = ((uint)(10));
+		this.vbox1.Add (this.hbox1);
+		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox1]));
+		w4.Position = 1;
+		w4.Expand = false;
+		w4.Fill = false;
+		w4.Padding = ((uint)(10));
 		this.Add (this.vbox1);
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();
