@@ -5,8 +5,8 @@
     <target-gtk-version>2.12</target-gtk-version>
   </configuration>
   <import>
-    <widget-library name="../bin/Debug/Quiz.exe" internal="true" />
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Debug/Quiz.exe" internal="true" />
   </import>
   <widget class="Gtk.Window" id="MainWindow" design-size="441 399">
     <property name="MemberName" />
@@ -67,7 +67,7 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Bin" id="Quiz.QuizWidget" design-size="303 326">
+  <widget class="Gtk.Bin" id="Quiz.QuizWidget" design-size="303 359">
     <property name="MemberName" />
     <property name="Visible">False</property>
     <child>
@@ -85,6 +85,7 @@
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
                 <property name="Label" translatable="yes">radiobutton1</property>
+                <property name="Active">True</property>
                 <property name="DrawIndicator">True</property>
                 <property name="HasLabel">True</property>
                 <property name="UseUnderline">True</property>
@@ -184,7 +185,7 @@
               <widget class="Gtk.TextView" id="textStatus">
                 <property name="MemberName" />
                 <property name="WidthRequest">200</property>
-                <property name="HeightRequest">30</property>
+                <property name="HeightRequest">40</property>
                 <property name="Editable">False</property>
                 <property name="CursorVisible">False</property>
                 <property name="Text" translatable="yes" />

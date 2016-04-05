@@ -4,10 +4,13 @@
 public partial class MainWindow
 {
 	private global::Gtk.VBox vbox1;
-	private global::Quiz.FilesWidget fileswidget2;
-	private global::Gtk.HBox hbox1;
-	private global::Gtk.Button buttonTake;
 	
+	private global::Quiz.FilesWidget fileswidget2;
+	
+	private global::Gtk.HBox hbox1;
+	
+	private global::Gtk.Button buttonTake;
+
 	protected virtual void Build ()
 	{
 		global::Stetic.Gui.Initialize (this);

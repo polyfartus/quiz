@@ -8,8 +8,6 @@
     <RootNamespace>Quiz</RootNamespace>
     <AssemblyName>Quiz</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <ProductVersion>12.0.0</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>True</DebugSymbols>
@@ -74,6 +72,7 @@
     <Compile Include="gtk-gui\Quiz.QuizWindow.cs" />
     <Compile Include="FilesWidget.cs" />
     <Compile Include="gtk-gui\Quiz.FilesWidget.cs" />
+    <Compile Include="ScoreObject2.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

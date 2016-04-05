@@ -5,8 +5,9 @@ namespace Quiz
 	public partial class QuizWindow
 	{
 		private global::Gtk.Table table1;
-		private global::Quiz.QuizWidget quizwidget1;
 		
+		private global::Quiz.QuizWidget quizwidget1;
+
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);

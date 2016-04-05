@@ -77,7 +77,8 @@ namespace Quiz
         {
             var date = new System.DateTime(); 
 
-            string post = date.ToShortDateString() + date.ToShortTimeString();
+            string post = "-" + date.ToShortDateString() + 
+                "-" + date.ToShortTimeString() + ".result";
 
             post = post.Replace("/", "-");
 

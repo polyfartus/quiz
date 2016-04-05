@@ -120,6 +120,11 @@ namespace Quiz
         {
             foreach(var file in files)
             {
+                if (!file.EndsWith("xml"))
+                {
+                    continue;
+                }
+
                 if (parent != null)
                 {
                     store.AppendValues(parent.Value, file);

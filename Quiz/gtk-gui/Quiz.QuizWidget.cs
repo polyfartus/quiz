@@ -5,21 +5,35 @@ namespace Quiz
 	public partial class QuizWidget
 	{
 		private global::Gtk.VBox vbox1;
-		private global::Gtk.Table table1;
-		private global::Gtk.RadioButton radiobutton1;
-		private global::Gtk.RadioButton radiobutton2;
-		private global::Gtk.RadioButton radiobutton3;
-		private global::Gtk.RadioButton radiobutton4;
-		private global::Gtk.TextView textStatus;
-		private global::Gtk.TextView textview1;
-		private global::Gtk.HBox hbox2;
-		private global::Gtk.Button buttonCheck;
-		private global::Gtk.Fixed fixed2;
-		private global::Gtk.Button buttonSave;
-		private global::Gtk.Fixed fixed1;
-		private global::Gtk.Button buttonPrevious;
-		private global::Gtk.Button buttonNext;
 		
+		private global::Gtk.Table table1;
+		
+		private global::Gtk.RadioButton radiobutton1;
+		
+		private global::Gtk.RadioButton radiobutton2;
+		
+		private global::Gtk.RadioButton radiobutton3;
+		
+		private global::Gtk.RadioButton radiobutton4;
+		
+		private global::Gtk.TextView textStatus;
+		
+		private global::Gtk.TextView textview1;
+		
+		private global::Gtk.HBox hbox2;
+		
+		private global::Gtk.Button buttonCheck;
+		
+		private global::Gtk.Fixed fixed2;
+		
+		private global::Gtk.Button buttonSave;
+		
+		private global::Gtk.Fixed fixed1;
+		
+		private global::Gtk.Button buttonPrevious;
+		
+		private global::Gtk.Button buttonNext;
+
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);
@@ -94,7 +108,7 @@ namespace Quiz
 			// Container child table1.Gtk.Table+TableChild
 			this.textStatus = new global::Gtk.TextView ();
 			this.textStatus.WidthRequest = 200;
-			this.textStatus.HeightRequest = 30;
+			this.textStatus.HeightRequest = 40;
 			this.textStatus.Name = "textStatus";
 			this.textStatus.Editable = false;
 			this.textStatus.CursorVisible = false;
