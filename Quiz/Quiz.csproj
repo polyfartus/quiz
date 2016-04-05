@@ -97,5 +97,6 @@
     <None Include="files\chapter 2\quiz2.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="files\chapter 2\ClickerQuestion2-5.png" />
   </ItemGroup>
 </Project>
