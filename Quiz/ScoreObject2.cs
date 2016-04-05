@@ -20,11 +20,11 @@ namespace Quiz
                 
                 writer.WriteStartDocument();
                 writer.WriteStartElement("score");
-                writer.WriteElementString("value", "" + this.Points);
-
+                writer.WriteAttributeString("value", "" + this.Points);
                 writer.WriteEndElement();
                 writer.WriteEndDocument();
 
+                writer.Flush();
                 writer.Close();
             }        
         }
@@ -49,7 +49,7 @@ namespace Quiz
                     {
                         var value = xmlReader.GetAttribute("value");
 
-                        if (value.Trim().Length > 0)
+                        if (value != null && value.Trim().Length > 0)
                         {
                             obj.Points = int.Parse(value);
                         }

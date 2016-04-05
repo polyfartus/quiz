@@ -28,6 +28,7 @@ public partial class MainWindow: Gtk.Window
         var score = ScoreObject2.Load();
 
         this.textview1.Buffer.Text = "Points: " + score.Points;
+        this.textview1.Show();
 
         if (path != null)
         {
@@ -69,7 +70,12 @@ public partial class MainWindow: Gtk.Window
                     win.Quiz = QuizObject.LoadQuiz(reader, path);
                 }
 
-                win.Show();
+                win.ShowNow();
+
+                win.Hidden += (sender2, e2) => 
+                    {
+                        this.EnableButtons();
+                    };
             }
         }
     }
