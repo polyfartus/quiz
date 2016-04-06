@@ -111,5 +111,9 @@
     <None Include="files\chapter 3\sample problems.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="files\chapter 3\baseball.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="files\chapter 3\summer day.png" />
   </ItemGroup>
 </Project>

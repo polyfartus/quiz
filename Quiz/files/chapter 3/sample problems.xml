@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <questions>
     <question 
-        points = "10"
+        points = "0"
         text = "A sailboat runs before the wind with a constant speed of 3.2 m/s in a direction 42 degrees north of west. How far west has the sailboat traveled in 25 minutes?"
-        answer1 = "3567 m"
+        answer1 = "3567"
         multipleChoice = "false"
     />
+    <question 
+        points = "0"
+        text = "Playing shortstop, you pick up a ground ball and throw it to second base. The ball is thrown horizontally, with a speed of 22 m/s directly toward point A. When the ball reaches the second baseman 0.45 seconds later, it is caught at point B. How far were you from the second baseman?"
+        answer1 = "9.9"
+        multipleChoice = "false"
+        picture = "files/chapter 3/baseball.png"
+    />
+    <question 
+        points = "0"
+        text = "On a hot summer day, a young girl swings on a rope above the local swimming hole. When she lets go of the rope her initial velocity is 2.25 m/s at an angle of 35.0 degrees above the horizontal. If she is in flight for 0.616 s, how high above the water was she when she let go of the rope?"
+        answer1 = "0.085"
+        multipleChoice = "false"
+        picture = "files/chapter 3/summer day.png"
+    />
+    
+    
 </questions>
 
 

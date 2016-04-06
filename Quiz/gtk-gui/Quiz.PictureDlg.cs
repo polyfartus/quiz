@@ -13,7 +13,7 @@ namespace Quiz
 			// Widget Quiz.PictureDlg
 			this.Name = "Quiz.PictureDlg";
 			this.Title = global::Mono.Unix.Catalog.GetString ("dialog1");
-			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
+			this.WindowPosition = ((global::Gtk.WindowPosition)(1));
 			// Internal child Quiz.PictureDlg.VBox
 			global::Gtk.VBox w1 = this.VBox;
 			w1.Name = "dialog1_VBox";
