@@ -99,12 +99,14 @@
     <Folder Include="files\chapter 6\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="files\chapter 3\quiz2.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Include="files\chapter 2\quiz1.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="files\chapter 3\ClickerQuestion3-4.png" />
+    <None Include="files\chapter 3\ClickerQuestion3-4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="files\chapter 3\clicker questions.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>

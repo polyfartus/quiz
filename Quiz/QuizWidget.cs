@@ -72,6 +72,15 @@ namespace Quiz
                 this.radiobutton4.Sensitive = true;
                 this.buttonCheck.Sensitive = true;
             }
+
+            if (this.current.Picture != null)
+            {
+                this.buttonPicture.Sensitive = true;
+            }
+            else
+            {
+                this.buttonPicture.Sensitive = false;
+            }
         }
             
         
@@ -207,7 +216,7 @@ namespace Quiz
 
         protected void OnButtonPictureClicked (object sender, EventArgs e)
         {
-            var dlg = new PictureDlg();
+            var dlg = new PictureDlg(this.current.Picture);
 
             dlg.Show();
 
