@@ -8,7 +8,7 @@ namespace Quiz
 		
 		private global::Quiz.QuizWidget quizwidget2;
 		
-		private global::Gtk.HButtonBox hbuttonbox1;
+		private global::Gtk.HButtonBox hbuttonbox4;
 		
 		private global::Gtk.Button buttonClose;
 
@@ -32,20 +32,22 @@ namespace Quiz
 			global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.quizwidget2]));
 			w1.Position = 0;
 			// Container child vbox1.Gtk.Box+BoxChild
-			this.hbuttonbox1 = new global::Gtk.HButtonBox ();
-			this.hbuttonbox1.Name = "hbuttonbox1";
-			// Container child hbuttonbox1.Gtk.ButtonBox+ButtonBoxChild
+			this.hbuttonbox4 = new global::Gtk.HButtonBox ();
+			this.hbuttonbox4.Name = "hbuttonbox4";
+			this.hbuttonbox4.BorderWidth = ((uint)(2));
+			this.hbuttonbox4.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
+			// Container child hbuttonbox4.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonClose = new global::Gtk.Button ();
 			this.buttonClose.CanFocus = true;
 			this.buttonClose.Name = "buttonClose";
 			this.buttonClose.UseUnderline = true;
 			this.buttonClose.Label = global::Mono.Unix.Catalog.GetString ("Close");
-			this.hbuttonbox1.Add (this.buttonClose);
-			global::Gtk.ButtonBox.ButtonBoxChild w2 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox1 [this.buttonClose]));
+			this.hbuttonbox4.Add (this.buttonClose);
+			global::Gtk.ButtonBox.ButtonBoxChild w2 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox4 [this.buttonClose]));
 			w2.Expand = false;
 			w2.Fill = false;
-			this.vbox1.Add (this.hbuttonbox1);
-			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbuttonbox1]));
+			this.vbox1.Add (this.hbuttonbox4);
+			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbuttonbox4]));
 			w3.Position = 1;
 			w3.Expand = false;
 			w3.Fill = false;

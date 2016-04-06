@@ -15,11 +15,12 @@ namespace Quiz
             this.Build ();
 
             this.textview1.ModifyFont (FontDescription.FromString("Courier 16"));
-            this.textStatus.ModifyFont (FontDescription.FromString("Courier 18"));
+            this.textStatus.ModifyFont (FontDescription.FromString("Courier 16"));
             this.radiobutton1.ModifyFont (FontDescription.FromString("Courier 14"));
             this.radiobutton2.ModifyFont (FontDescription.FromString("Courier 14"));
             this.radiobutton3.ModifyFont (FontDescription.FromString("Courier 14"));
             this.radiobutton4.ModifyFont (FontDescription.FromString("Courier 14"));
+            this.label1.ModifyFont(FontDescription.FromString("Courier 16"));
         }
 
         public QuizObject Quiz
@@ -49,8 +50,9 @@ namespace Quiz
             this.textStatus.Buffer.Text = "";
             this.radiobutton1.Active = true;
 
-            this.textStatus.Buffer.Text = this.current.StatusMessage + "\n" +
-                "Points: " + this.quiz.Points + "";
+            this.textStatus.Buffer.Text = this.current.StatusMessage;
+
+            this.label1.Text = "Points: " + this.quiz.Points + "";
 
             SetSelected(this.current.InputAnswer);
 
@@ -70,11 +72,6 @@ namespace Quiz
                 this.radiobutton4.Sensitive = true;
                 this.buttonCheck.Sensitive = true;
             }
-        }
-            
-        
-        protected void OnButtonSaveClicked (object sender, EventArgs e)
-        {
         }
 
         protected void OnButtonCheckClicked (object sender, EventArgs e)
