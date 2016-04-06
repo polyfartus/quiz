@@ -119,6 +119,7 @@
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
                 <property name="Label" translatable="yes">radiobutton1</property>
+                <property name="Active">True</property>
                 <property name="DrawIndicator">True</property>
                 <property name="HasLabel">True</property>
                 <property name="UseUnderline">True</property>
@@ -277,7 +278,7 @@
             <child>
               <widget class="Gtk.Label" id="label1">
                 <property name="MemberName" />
-                <property name="WidthRequest">100</property>
+                <property name="WidthRequest">150</property>
                 <property name="HeightRequest">25</property>
                 <property name="LabelProp" translatable="yes">Points:</property>
               </widget>
@@ -307,7 +308,8 @@
                   <widget class="Gtk.Button" id="buttonCheck">
                     <property name="MemberName" />
                     <property name="CanFocus">True</property>
-                    <property name="Type">TextOnly</property>
+                    <property name="Type">TextAndIcon</property>
+                    <property name="Icon">stock:gtk-apply Menu</property>
                     <property name="Label" translatable="yes">Check</property>
                     <property name="UseUnderline">True</property>
                     <signal name="Clicked" handler="OnButtonCheckClicked" />
@@ -322,7 +324,7 @@
                     <property name="MemberName" />
                     <property name="CanFocus">True</property>
                     <property name="Type">TextOnly</property>
-                    <property name="Label" translatable="yes">Picture</property>
+                    <property name="Label" translatable="yes">Show Picture</property>
                     <property name="UseUnderline">True</property>
                     <signal name="Clicked" handler="OnButtonPictureClicked" />
                   </widget>
@@ -357,8 +359,9 @@
                   <widget class="Gtk.Button" id="buttonPrevious">
                     <property name="MemberName" />
                     <property name="CanFocus">True</property>
-                    <property name="Type">TextOnly</property>
-                    <property name="Label" translatable="yes">Previous</property>
+                    <property name="Type">TextAndIcon</property>
+                    <property name="Icon">stock:gtk-go-back Menu</property>
+                    <property name="Label" translatable="yes" />
                     <property name="UseUnderline">True</property>
                     <signal name="Clicked" handler="OnButtonPreviousClicked" />
                   </widget>
@@ -371,8 +374,9 @@
                   <widget class="Gtk.Button" id="buttonNext">
                     <property name="MemberName" />
                     <property name="CanFocus">True</property>
-                    <property name="Type">TextOnly</property>
-                    <property name="Label" translatable="yes">Next</property>
+                    <property name="Type">TextAndIcon</property>
+                    <property name="Icon">stock:gtk-go-forward Menu</property>
+                    <property name="Label" translatable="yes" />
                     <property name="UseUnderline">True</property>
                     <signal name="Clicked" handler="OnButtonNextClicked" />
                   </widget>

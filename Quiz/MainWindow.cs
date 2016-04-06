@@ -19,6 +19,8 @@ public partial class MainWindow: Gtk.Window
             {
                 EnableButtons();
             };
+
+        EnableButtons();
     }
 
     void EnableButtons()
@@ -27,7 +29,7 @@ public partial class MainWindow: Gtk.Window
 
         var score = ScoreObject2.Load();
 
-        this.textview1.Buffer.Text = "Points: " + score.Points;
+        this.textview1.Buffer.Text = "Points earned todate: " + score.Points;
         this.textview1.Show();
 
         if (path != null)

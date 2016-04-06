@@ -52,7 +52,7 @@ namespace Quiz
 
             this.textStatus.Buffer.Text = this.current.StatusMessage;
 
-            this.label1.Text = "Points: " + this.quiz.Points + "";
+            this.label1.Text = "Points Earned: " + this.quiz.Points + "";
 
             SetSelected(this.current.InputAnswer);
 
@@ -73,7 +73,7 @@ namespace Quiz
                 this.buttonCheck.Sensitive = true;
             }
 
-            if (this.current.Picture != null)
+            if (this.current.Picture != null && this.current.Picture.Length > 0)
             {
                 this.buttonPicture.Sensitive = true;
             }
@@ -82,8 +82,7 @@ namespace Quiz
                 this.buttonPicture.Sensitive = false;
             }
         }
-            
-        
+
         protected void OnButtonSaveClicked (object sender, EventArgs e)
         {
             var date = new System.DateTime(); 
