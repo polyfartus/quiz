@@ -17,6 +17,7 @@
         answer3 = "The velocity is to the left."
         answer4 = "The velocity is down and to the left."
         answer = "2"
+        picture = "files/chapter 3/ClickerQuestion3-4.png"
     />
 </questions>
 

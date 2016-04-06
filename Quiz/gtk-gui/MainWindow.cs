@@ -4,15 +4,13 @@
 public partial class MainWindow
 {
 	private global::Gtk.VBox vbox1;
-	
 	private global::Quiz.FilesWidget fileswidget2;
-	
 	private global::Gtk.HBox hbox1;
-	
 	private global::Gtk.TextView textview1;
-	
+	private global::Gtk.HButtonBox hbuttonbox2;
 	private global::Gtk.Button buttonTake;
-
+	private global::Gtk.Button buttonClose;
+	
 	protected virtual void Build ()
 	{
 		global::Stetic.Gui.Initialize (this);
@@ -47,22 +45,39 @@ public partial class MainWindow
 		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.textview1]));
 		w2.Position = 0;
 		// Container child hbox1.Gtk.Box+BoxChild
+		this.hbuttonbox2 = new global::Gtk.HButtonBox ();
+		this.hbuttonbox2.Name = "hbuttonbox2";
+		// Container child hbuttonbox2.Gtk.ButtonBox+ButtonBoxChild
 		this.buttonTake = new global::Gtk.Button ();
 		this.buttonTake.CanFocus = true;
 		this.buttonTake.Name = "buttonTake";
 		this.buttonTake.UseUnderline = true;
 		this.buttonTake.Label = global::Mono.Unix.Catalog.GetString ("Take Quiz");
-		this.hbox1.Add (this.buttonTake);
-		global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.buttonTake]));
-		w3.Position = 2;
+		this.hbuttonbox2.Add (this.buttonTake);
+		global::Gtk.ButtonBox.ButtonBoxChild w3 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox2 [this.buttonTake]));
 		w3.Expand = false;
 		w3.Fill = false;
-		this.vbox1.Add (this.hbox1);
-		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox1]));
+		// Container child hbuttonbox2.Gtk.ButtonBox+ButtonBoxChild
+		this.buttonClose = new global::Gtk.Button ();
+		this.buttonClose.CanFocus = true;
+		this.buttonClose.Name = "buttonClose";
+		this.buttonClose.UseUnderline = true;
+		this.buttonClose.Label = global::Mono.Unix.Catalog.GetString ("Close");
+		this.hbuttonbox2.Add (this.buttonClose);
+		global::Gtk.ButtonBox.ButtonBoxChild w4 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox2 [this.buttonClose]));
 		w4.Position = 1;
 		w4.Expand = false;
 		w4.Fill = false;
-		w4.Padding = ((uint)(10));
+		this.hbox1.Add (this.hbuttonbox2);
+		global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.hbuttonbox2]));
+		w5.Position = 2;
+		w5.Expand = false;
+		this.vbox1.Add (this.hbox1);
+		global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox1]));
+		w6.Position = 1;
+		w6.Expand = false;
+		w6.Fill = false;
+		w6.Padding = ((uint)(10));
 		this.Add (this.vbox1);
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();
@@ -72,5 +87,6 @@ public partial class MainWindow
 		this.Show ();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
 		this.buttonTake.Clicked += new global::System.EventHandler (this.OnButtonTakeClicked);
+		this.buttonClose.Clicked += new global::System.EventHandler (this.OnButtonCloseClicked);
 	}
 }

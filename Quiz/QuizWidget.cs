@@ -15,12 +15,12 @@ namespace Quiz
             this.Build ();
 
             this.textview1.ModifyFont (FontDescription.FromString("Courier 16"));
-            this.textStatus.ModifyFont (FontDescription.FromString("Courier 16"));
+            this.label1.ModifyFont (FontDescription.FromString("Courier 16"));
+            this.textStatus.ModifyFont (FontDescription.FromString("Courier 18"));
             this.radiobutton1.ModifyFont (FontDescription.FromString("Courier 14"));
             this.radiobutton2.ModifyFont (FontDescription.FromString("Courier 14"));
             this.radiobutton3.ModifyFont (FontDescription.FromString("Courier 14"));
             this.radiobutton4.ModifyFont (FontDescription.FromString("Courier 14"));
-            this.label1.ModifyFont(FontDescription.FromString("Courier 16"));
         }
 
         public QuizObject Quiz
@@ -71,6 +71,23 @@ namespace Quiz
                 this.radiobutton3.Sensitive = true;
                 this.radiobutton4.Sensitive = true;
                 this.buttonCheck.Sensitive = true;
+            }
+        }
+            
+        
+        protected void OnButtonSaveClicked (object sender, EventArgs e)
+        {
+            var date = new System.DateTime(); 
+
+            string post = date.ToShortDateString() + date.ToShortTimeString();
+
+            post = post.Replace("/", "-");
+
+            string path = this.quiz.Path + post;
+
+            using (var stream = System.IO.File.CreateText(path))
+            {
+                this.quiz.Save(stream);
             }
         }
 
@@ -186,6 +203,17 @@ namespace Quiz
                     this.radiobutton1.Active = true; 
                     break;
             }
+        }
+
+        protected void OnButtonPictureClicked (object sender, EventArgs e)
+        {
+            var dlg = new PictureDlg();
+
+            dlg.Show();
+
+            dlg.Run();
+
+            dlg.Destroy();
         }
     }
 }

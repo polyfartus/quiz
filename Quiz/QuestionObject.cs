@@ -18,6 +18,12 @@ namespace Quiz
             set;
         }
 
+        public string Picture
+        {
+            get;
+            set;
+        }
+
         public string StatusMessage
         {
             get { return this.statusMessage; }

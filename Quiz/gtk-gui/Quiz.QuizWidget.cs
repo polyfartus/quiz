@@ -5,39 +5,24 @@ namespace Quiz
 	public partial class QuizWidget
 	{
 		private global::Gtk.VBox vbox1;
-		
 		private global::Gtk.Table table1;
-		
 		private global::Gtk.RadioButton radiobutton1;
-		
 		private global::Gtk.RadioButton radiobutton2;
-		
 		private global::Gtk.RadioButton radiobutton3;
-		
 		private global::Gtk.RadioButton radiobutton4;
-		
 		private global::Gtk.TextView textStatus;
-		
 		private global::Gtk.TextView textview1;
-		
 		private global::Gtk.Fixed fixed2;
-		
 		private global::Gtk.Label label1;
-		
 		private global::Gtk.HBox hbox2;
-		
 		private global::Gtk.HButtonBox hbuttonbox3;
-		
 		private global::Gtk.Button buttonCheck;
-		
+		private global::Gtk.Button buttonPicture;
 		private global::Gtk.Fixed fixed1;
-		
 		private global::Gtk.HButtonBox hbuttonbox2;
-		
 		private global::Gtk.Button buttonPrevious;
-		
 		private global::Gtk.Button buttonNext;
-
+		
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);
@@ -179,17 +164,28 @@ namespace Quiz
 			global::Gtk.ButtonBox.ButtonBoxChild w10 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox3 [this.buttonCheck]));
 			w10.Expand = false;
 			w10.Fill = false;
-			this.hbox2.Add (this.hbuttonbox3);
-			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.hbuttonbox3]));
-			w11.Position = 0;
+			// Container child hbuttonbox3.Gtk.ButtonBox+ButtonBoxChild
+			this.buttonPicture = new global::Gtk.Button ();
+			this.buttonPicture.CanFocus = true;
+			this.buttonPicture.Name = "buttonPicture";
+			this.buttonPicture.UseUnderline = true;
+			this.buttonPicture.Label = global::Mono.Unix.Catalog.GetString ("Picture");
+			this.hbuttonbox3.Add (this.buttonPicture);
+			global::Gtk.ButtonBox.ButtonBoxChild w11 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox3 [this.buttonPicture]));
+			w11.Position = 1;
 			w11.Expand = false;
+			w11.Fill = false;
+			this.hbox2.Add (this.hbuttonbox3);
+			global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.hbuttonbox3]));
+			w12.Position = 0;
+			w12.Expand = false;
 			// Container child hbox2.Gtk.Box+BoxChild
 			this.fixed1 = new global::Gtk.Fixed ();
 			this.fixed1.Name = "fixed1";
 			this.fixed1.HasWindow = false;
 			this.hbox2.Add (this.fixed1);
-			global::Gtk.Box.BoxChild w12 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.fixed1]));
-			w12.Position = 1;
+			global::Gtk.Box.BoxChild w13 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.fixed1]));
+			w13.Position = 1;
 			// Container child hbox2.Gtk.Box+BoxChild
 			this.hbuttonbox2 = new global::Gtk.HButtonBox ();
 			this.hbuttonbox2.Name = "hbuttonbox2";
@@ -200,9 +196,9 @@ namespace Quiz
 			this.buttonPrevious.UseUnderline = true;
 			this.buttonPrevious.Label = global::Mono.Unix.Catalog.GetString ("Previous");
 			this.hbuttonbox2.Add (this.buttonPrevious);
-			global::Gtk.ButtonBox.ButtonBoxChild w13 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox2 [this.buttonPrevious]));
-			w13.Expand = false;
-			w13.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w14 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox2 [this.buttonPrevious]));
+			w14.Expand = false;
+			w14.Fill = false;
 			// Container child hbuttonbox2.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonNext = new global::Gtk.Button ();
 			this.buttonNext.CanFocus = true;
@@ -210,27 +206,28 @@ namespace Quiz
 			this.buttonNext.UseUnderline = true;
 			this.buttonNext.Label = global::Mono.Unix.Catalog.GetString ("Next");
 			this.hbuttonbox2.Add (this.buttonNext);
-			global::Gtk.ButtonBox.ButtonBoxChild w14 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox2 [this.buttonNext]));
-			w14.Position = 1;
-			w14.Expand = false;
-			w14.Fill = false;
-			this.hbox2.Add (this.hbuttonbox2);
-			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.hbuttonbox2]));
-			w15.Position = 2;
+			global::Gtk.ButtonBox.ButtonBoxChild w15 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox2 [this.buttonNext]));
+			w15.Position = 1;
 			w15.Expand = false;
-			this.vbox1.Add (this.hbox2);
-			global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox2]));
-			w16.PackType = ((global::Gtk.PackType)(1));
+			w15.Fill = false;
+			this.hbox2.Add (this.hbuttonbox2);
+			global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.hbuttonbox2]));
 			w16.Position = 2;
 			w16.Expand = false;
-			w16.Fill = false;
-			w16.Padding = ((uint)(1));
+			this.vbox1.Add (this.hbox2);
+			global::Gtk.Box.BoxChild w17 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox2]));
+			w17.PackType = ((global::Gtk.PackType)(1));
+			w17.Position = 2;
+			w17.Expand = false;
+			w17.Fill = false;
+			w17.Padding = ((uint)(1));
 			this.Add (this.vbox1);
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();
 			}
 			this.Hide ();
 			this.buttonCheck.Clicked += new global::System.EventHandler (this.OnButtonCheckClicked);
+			this.buttonPicture.Clicked += new global::System.EventHandler (this.OnButtonPictureClicked);
 			this.buttonPrevious.Clicked += new global::System.EventHandler (this.OnButtonPreviousClicked);
 			this.buttonNext.Clicked += new global::System.EventHandler (this.OnButtonNextClicked);
 		}

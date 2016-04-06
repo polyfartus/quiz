@@ -8,6 +8,8 @@
     <RootNamespace>Quiz</RootNamespace>
     <AssemblyName>Quiz</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>True</DebugSymbols>
@@ -73,6 +75,8 @@
     <Compile Include="FilesWidget.cs" />
     <Compile Include="gtk-gui\Quiz.FilesWidget.cs" />
     <Compile Include="ScoreObject2.cs" />
+    <Compile Include="PictureDlg.cs" />
+    <Compile Include="gtk-gui\Quiz.PictureDlg.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
@@ -89,14 +93,18 @@
     <Folder Include="files\" />
     <Folder Include="files\chapter 1\" />
     <Folder Include="files\chapter 2\" />
+    <Folder Include="files\chapter 3\" />
+    <Folder Include="files\chapter 4\" />
+    <Folder Include="files\chapter 5\" />
+    <Folder Include="files\chapter 6\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="files\chapter 1\quiz1.xml">
+    <None Include="files\chapter 3\quiz2.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="files\chapter 2\quiz2.xml">
+    <None Include="files\chapter 2\quiz1.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="files\chapter 2\ClickerQuestion2-5.png" />
+    <None Include="files\chapter 3\ClickerQuestion3-4.png" />
   </ItemGroup>
 </Project>

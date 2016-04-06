@@ -79,4 +79,11 @@ public partial class MainWindow: Gtk.Window
             }
         }
     }
+
+    protected void OnButtonCloseClicked (object sender, EventArgs e)
+    {
+        Application.Quit();
+
+        this.Destroy();
+    }
 }

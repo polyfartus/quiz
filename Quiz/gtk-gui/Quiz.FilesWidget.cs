@@ -5,11 +5,9 @@ namespace Quiz
 	public partial class FilesWidget
 	{
 		private global::Gtk.VBox vbox1;
-		
 		private global::Gtk.ScrolledWindow scrolledwindow1;
-		
 		private global::Gtk.TreeView treeview1;
-
+		
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);

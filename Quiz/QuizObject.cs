@@ -92,6 +92,7 @@ namespace Quiz
                     q.Answer3 = xmlReader.GetAttribute("answer3");
                     q.Answer4 = xmlReader.GetAttribute("answer4");
                     q.Answer = int.Parse(xmlReader.GetAttribute("answer"));
+                    q.Picture = xmlReader.GetAttribute("picture");
 
                     quiz.Questions.Add(q);
                 }
