@@ -24,6 +24,12 @@ namespace Quiz
             set;
         }
 
+        public string InputAnswerString
+        {
+            get;
+            set;
+        }
+        
         public bool MultipleChoice
         {
             get;

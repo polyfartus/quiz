@@ -34,9 +34,22 @@ namespace Quiz
 
                 foreach (var q in this.questions)
                 {
-                    if (q.IsChecked && q.InputAnswer == q.Answer)
+                    if (q.IsChecked)
                     {
-                        points += q.Points;
+                        if (!q.MultipleChoice)
+                        {
+                            if (q.InputAnswerString == q.Answer1)
+                            {
+                                points += q.Points;
+                            }
+                        }
+                        else
+                        {
+                            if (q.IsChecked && q.InputAnswer == q.Answer)
+                            {
+                                points += q.Points;
+                            }
+                        }
                     }
                 }
 

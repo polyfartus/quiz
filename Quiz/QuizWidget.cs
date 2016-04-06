@@ -165,23 +165,44 @@ namespace Quiz
 
         void Check()
         {
-            int selected = GetSelected ();
-
             string msg;
 
-            if (selected == this.current.Answer) 
+            if (this.current.MultipleChoice)
             {
-                msg = "Correct";
-            } 
-            else 
-            {
-                msg = "Wrong. the answer is " + this.current.Answer;
-            }
+                int selected = GetSelected();
 
-            this.textStatus.Buffer.Text = msg;
-            this.current.IsChecked = true;
-            this.current.StatusMessage = msg;
-            this.current.InputAnswer = selected;
+                if (selected == this.current.Answer)
+                {
+                    msg = "Correct";
+                }
+                else
+                {
+                    msg = "Wrong. the answer is " + this.current.Answer;
+                }
+
+                this.textStatus.Buffer.Text = msg;
+                this.current.IsChecked = true;
+                this.current.StatusMessage = msg;
+                this.current.InputAnswer = selected;
+            }
+            else
+            {
+                string input = this.entry1.Text.ToLower();
+                
+                if (input == this.current.Answer1)
+                {
+                    msg = "Correct";
+                }
+                else
+                {
+                    msg = "Wrong. the answer is " + this.current.Answer1;
+                }
+                
+                this.textStatus.Buffer.Text = msg;
+                this.current.IsChecked = true;
+                this.current.StatusMessage = msg;
+                this.current.InputAnswerString = input;
+            }
 
             this.ShowQuestion();
         }
