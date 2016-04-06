@@ -81,6 +81,23 @@ namespace Quiz
             {
                 this.buttonPicture.Sensitive = false;
             }
+
+            if (this.current.MultipleChoice)
+            {
+                this.radiobutton1.Show();
+                this.radiobutton2.Show();
+                this.radiobutton3.Show();
+                this.radiobutton4.Show();
+                this.entry1.Hide();
+            }
+            else
+            {
+                this.radiobutton1.Hide();
+                this.radiobutton2.Hide();
+                this.radiobutton3.Hide();
+                this.radiobutton4.Hide();
+                this.entry1.Show();
+            }
         }
 
         protected void OnButtonSaveClicked (object sender, EventArgs e)

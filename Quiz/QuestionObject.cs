@@ -24,6 +24,12 @@ namespace Quiz
             set;
         }
 
+        public bool MultipleChoice
+        {
+            get;
+            set;
+        }
+
         public string StatusMessage
         {
             get { return this.statusMessage; }

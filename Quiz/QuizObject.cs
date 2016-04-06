@@ -91,8 +91,18 @@ namespace Quiz
                     q.Answer2 = xmlReader.GetAttribute("answer2");
                     q.Answer3 = xmlReader.GetAttribute("answer3");
                     q.Answer4 = xmlReader.GetAttribute("answer4");
-                    q.Answer = int.Parse(xmlReader.GetAttribute("answer"));
+
+                    int test = 0;
+                    int.TryParse(xmlReader.GetAttribute("answer"), out test);
+                    q.Answer = test;
                     q.Picture = xmlReader.GetAttribute("picture");
+
+                    q.MultipleChoice = true;
+                    if (xmlReader.GetAttribute("multipleChoice") != null &&
+                        xmlReader.GetAttribute("multipleChoice") == "false")
+                    {
+                        q.MultipleChoice = false;
+                    }
 
                     quiz.Questions.Add(q);
                 }
