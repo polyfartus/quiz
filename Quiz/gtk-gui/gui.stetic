@@ -101,7 +101,7 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Bin" id="Quiz.QuizWidget" design-size="352 320">
+  <widget class="Gtk.Bin" id="Quiz.QuizWidget" design-size="446 320">
     <property name="MemberName" />
     <property name="Visible">False</property>
     <child>
@@ -140,7 +140,6 @@
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
                 <property name="Label" translatable="yes">radiobutton1</property>
-                <property name="Active">True</property>
                 <property name="DrawIndicator">True</property>
                 <property name="HasLabel">True</property>
                 <property name="UseUnderline">True</property>

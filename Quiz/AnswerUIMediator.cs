@@ -9,6 +9,8 @@ namespace Quiz
 
         readonly RadioButton[] buttons = new RadioButton[4];
 
+        readonly int[] permutation = new int[4];
+
         public AnswerUIMediator(QuizWidget widget)
         {
             this.widget = widget;
@@ -18,7 +20,17 @@ namespace Quiz
             buttons[2] = this.widget.Radiobutton3;
             buttons[3] = this.widget.Radiobutton4;
 
+            permutation[0] = 0;
+            permutation[1] = 1;
+            permutation[2] = 2;
+            permutation[3] = 3;
+
             Scramble();
+        }
+
+        public int ConvertIndex(int index)
+        {
+            return permutation[index - 1] + 1;
         }
 
         void Scramble()
@@ -38,6 +50,10 @@ namespace Quiz
             var temp = buttons[left];
             buttons[left] = buttons[right];
             buttons[right] = temp;
+
+            var temp2 = permutation[left];
+            permutation[left] = permutation[right];
+            permutation[right] = temp2;
         }
 
         public void ShowQuestion()
@@ -49,7 +65,10 @@ namespace Quiz
 
             this.widget.Radiobutton1.Active = true;
 
-            SetSelected(this.widget.Current.InputAnswer);
+            if (this.widget.Current.IsChecked)
+            {
+                SetSelected(this.widget.Current.InputAnswer);
+            }
 
             if (this.widget.Current.IsChecked)
             {

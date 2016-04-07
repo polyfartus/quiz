@@ -182,7 +182,8 @@ namespace Quiz
                 }
                 else
                 {
-                    msg = "Wrong. the answer is " + this.current.Answer;
+                    msg = "Wrong. the answer is " + 
+                        this.mediator.ConvertIndex(this.current.Answer);
                 }
 
                 this.textStatus.Buffer.Text = msg;
