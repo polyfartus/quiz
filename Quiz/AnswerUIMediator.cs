@@ -1,4 +1,5 @@
 ﻿using System;
+using Gtk;
 
 namespace Quiz
 {
@@ -6,17 +7,24 @@ namespace Quiz
     {
         readonly QuizWidget widget;
 
+        readonly RadioButton[] buttons = new RadioButton[4];
+
         public AnswerUIMediator(QuizWidget widget)
         {
             this.widget = widget;
+
+            buttons[0] = this.widget.Radiobutton1;
+            buttons[1] = this.widget.Radiobutton2;
+            buttons[2] = this.widget.Radiobutton3;
+            buttons[3] = this.widget.Radiobutton4;
         }
 
         public void ShowQuestion()
         {
-            this.widget.Radiobutton1.Label = this.widget.Current.Answer1;
-            this.widget.Radiobutton2.Label = this.widget.Current.Answer2;
-            this.widget.Radiobutton3.Label = this.widget.Current.Answer3;
-            this.widget.Radiobutton4.Label = this.widget.Current.Answer4;
+            buttons[0].Label = this.widget.Current.Answer1;
+            buttons[1].Label = this.widget.Current.Answer2;
+            buttons[2].Label = this.widget.Current.Answer3;
+            buttons[3].Label = this.widget.Current.Answer4;
 
             this.widget.Radiobutton1.Active = true;
 
@@ -24,55 +32,55 @@ namespace Quiz
 
             if (this.widget.Current.IsChecked)
             {
-                this.widget.Radiobutton1.Sensitive = false;
-                this.widget.Radiobutton2.Sensitive = false;
-                this.widget.Radiobutton3.Sensitive = false;
-                this.widget.Radiobutton4.Sensitive = false;
+                buttons[0].Sensitive = false;
+                buttons[1].Sensitive = false;
+                buttons[2].Sensitive = false;
+                buttons[3].Sensitive = false;
             }
             else
             {
-                this.widget.Radiobutton1.Sensitive = true;
-                this.widget.Radiobutton2.Sensitive = true;
-                this.widget.Radiobutton3.Sensitive = true;
-                this.widget.Radiobutton4.Sensitive = true;
+                buttons[0].Sensitive = true;
+                buttons[1].Sensitive = true;
+                buttons[2].Sensitive = true;
+                buttons[3].Sensitive = true;
             }
 
             if (this.widget.Current.MultipleChoice)
             {
-                this.widget.Radiobutton1.Show();
-                this.widget.Radiobutton2.Show();
-                this.widget.Radiobutton3.Show();
-                this.widget.Radiobutton4.Show();
+                buttons[0].Show();
+                buttons[1].Show();
+                buttons[2].Show();
+                buttons[3].Show();
                 this.widget.Entry1.Hide();
             }
             else
             {
-                this.widget.Radiobutton1.Hide();
-                this.widget.Radiobutton2.Hide();
-                this.widget.Radiobutton3.Hide();
-                this.widget.Radiobutton4.Hide();
+                buttons[0].Hide();
+                buttons[1].Hide();
+                buttons[2].Hide();
+                buttons[3].Hide();
                 this.widget.Entry1.Show();
             }
         }
 
         public int GetSelected()
         {
-            if (this.widget.Radiobutton1.Active) 
+            if (buttons[0].Active) 
             {
                 return 1;
             }
 
-            if (this.widget.Radiobutton2.Active) 
+            if (buttons[1].Active) 
             {
                 return 2;
             }
 
-            if (this.widget.Radiobutton3.Active) 
+            if (buttons[2].Active) 
             {
                 return 3;
             }
 
-            if (this.widget.Radiobutton4.Active) 
+            if (buttons[3].Active) 
             {
                 return 4;
             }
@@ -85,16 +93,16 @@ namespace Quiz
             switch (index)
             {
                 case 2:
-                    this.widget.Radiobutton2.Active = true; 
+                    buttons[1].Active = true; 
                     break;
                 case 3:
-                    this.widget.Radiobutton3.Active = true; 
+                    buttons[2].Active = true; 
                     break;
                 case 4:
-                    this.widget.Radiobutton4.Active = true; 
+                    buttons[3].Active = true; 
                     break;
                 default:
-                    this.widget.Radiobutton1.Active = true; 
+                    buttons[0].Active = true; 
                     break;
             }
         }
