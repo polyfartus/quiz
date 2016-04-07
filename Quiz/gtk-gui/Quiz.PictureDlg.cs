@@ -5,8 +5,9 @@ namespace Quiz
 	public partial class PictureDlg
 	{
 		private global::Gtk.Image image1;
-		private global::Gtk.Button buttonOk;
 		
+		private global::Gtk.Button buttonOk;
+
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);

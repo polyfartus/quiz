@@ -1,5 +1,6 @@
 ﻿using System;
 using Pango;
+using Gtk;
 
 namespace Quiz
 {
@@ -9,6 +10,8 @@ namespace Quiz
         QuizObject quiz;
 
         QuestionObject current;
+
+        readonly AnswerUIMediator mediator;
 
         public QuizWidget ()
         {
@@ -21,6 +24,13 @@ namespace Quiz
             this.radiobutton2.ModifyFont (FontDescription.FromString("Courier 14"));
             this.radiobutton3.ModifyFont (FontDescription.FromString("Courier 14"));
             this.radiobutton4.ModifyFont (FontDescription.FromString("Courier 14"));
+
+            this.mediator = new AnswerUIMediator(this);
+        }
+
+        public QuestionObject Current
+        {
+            get { return this.current; }
         }
 
         public QuizObject Quiz
@@ -35,6 +45,31 @@ namespace Quiz
             }
         }
 
+        public RadioButton Radiobutton1
+        {
+            get { return this.radiobutton1;  }
+        }
+
+        public RadioButton Radiobutton2
+        {
+            get { return this.radiobutton2;  }
+        }
+
+        public RadioButton Radiobutton3
+        {
+            get { return this.radiobutton3;  }
+        }
+
+        public RadioButton Radiobutton4
+        {
+            get { return this.radiobutton4;  }
+        }
+
+        public Entry Entry1
+        {
+            get { return this.entry1; }
+        }
+
         void ShowQuestion()
         {
             int index = this.quiz.Questions.IndexOf(this.current);
@@ -43,33 +78,18 @@ namespace Quiz
                 this.current.Text + 
                 "\n\nPoints: " + this.current.Points;
 
-            this.radiobutton1.Label = this.current.Answer1;
-            this.radiobutton2.Label = this.current.Answer2;
-            this.radiobutton3.Label = this.current.Answer3;
-            this.radiobutton4.Label = this.current.Answer4;
             this.textStatus.Buffer.Text = "";
-            this.radiobutton1.Active = true;
 
             this.textStatus.Buffer.Text = this.current.StatusMessage;
 
             this.label1.Text = "Points Earned: " + this.quiz.Points + "";
 
-            SetSelected(this.current.InputAnswer);
-
             if (this.current.IsChecked)
             {
-                this.radiobutton1.Sensitive = false;
-                this.radiobutton2.Sensitive = false;
-                this.radiobutton3.Sensitive = false;
-                this.radiobutton4.Sensitive = false;
                 this.buttonCheck.Sensitive = false;
             }
             else
             {
-                this.radiobutton1.Sensitive = true;
-                this.radiobutton2.Sensitive = true;
-                this.radiobutton3.Sensitive = true;
-                this.radiobutton4.Sensitive = true;
                 this.buttonCheck.Sensitive = true;
             }
 
@@ -82,22 +102,7 @@ namespace Quiz
                 this.buttonPicture.Sensitive = false;
             }
 
-            if (this.current.MultipleChoice)
-            {
-                this.radiobutton1.Show();
-                this.radiobutton2.Show();
-                this.radiobutton3.Show();
-                this.radiobutton4.Show();
-                this.entry1.Hide();
-            }
-            else
-            {
-                this.radiobutton1.Hide();
-                this.radiobutton2.Hide();
-                this.radiobutton3.Hide();
-                this.radiobutton4.Hide();
-                this.entry1.Show();
-            }
+            this.mediator.ShowQuestion();
         }
 
         protected void OnButtonSaveClicked (object sender, EventArgs e)
@@ -169,7 +174,7 @@ namespace Quiz
 
             if (this.current.MultipleChoice)
             {
-                int selected = GetSelected();
+                int selected = this.mediator.GetSelected();
 
                 if (selected == this.current.Answer)
                 {
@@ -205,50 +210,6 @@ namespace Quiz
             }
 
             this.ShowQuestion();
-        }
-
-        int GetSelected()
-        {
-            if (this.radiobutton1.Active) 
-            {
-                return 1;
-            }
-
-            if (this.radiobutton2.Active) 
-            {
-                return 2;
-            }
-
-            if (this.radiobutton3.Active) 
-            {
-                return 3;
-            }
-
-            if (this.radiobutton4.Active) 
-            {
-                return 4;
-            }
-
-            return 0;
-        }
-
-        void SetSelected(int index)
-        {
-            switch (index)
-            {
-                case 2:
-                    this.radiobutton2.Active = true; 
-                    break;
-                case 3:
-                    this.radiobutton3.Active = true; 
-                    break;
-                case 4:
-                    this.radiobutton4.Active = true; 
-                    break;
-                default:
-                    this.radiobutton1.Active = true; 
-                    break;
-            }
         }
 
         protected void OnButtonPictureClicked (object sender, EventArgs e)
