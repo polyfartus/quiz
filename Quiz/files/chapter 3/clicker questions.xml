@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <questions>
     <question 
-        points = "2"
+        points = "5"
         text = "A physics instructor walks across the classroom at a constant velocity of 2.0 m/sec. He tosses a tennis ball in the air at 2.0 m/sec. At what angle from the vertical should he throw it so that the ball will land in his hand 0.40 seconds later?"
         answer1 = "0"
         answer2 = "45"
@@ -10,7 +10,7 @@
         answer = "1"
     />
     <question 
-        points = "2"
+        points = "5"
         text = "A rock is thrown horizontally with a velocity v from the top of a cliff of height H. It takes a time t to reach the ground. The same rock is thrown a second time with a horizontal velocity 2v. How does the time it takes for ball to reach the ground change?"
         answer1 = "The time doubles."
         answer2 = "The time increases but by less than double."
@@ -20,7 +20,7 @@
         picture = ""
     />
     <question 
-        points = "2"
+        points = "5"
         text = "The picture shows the parabolic trajectory of a golf ball as it flies from the tee to the green. What is the direction of the ball’s velocity at its highest point in flight?"
         answer1 = "The velocity is zero."
         answer2 = "The velocity is to the right."
@@ -30,7 +30,7 @@
         picture = "files/chapter 3/ClickerQuestion3-4.png"
     />
     <question 
-        points = "2"
+        points = "5"
         text = "A rock is thrown with a horizontal velocity v from the top of a cliff of height H. It hits the ground at a landing point a distance d from the base of the cliff. The rock is thrown a second time with a horizontal velocity 2v. How does distance to the landing point change?"
         answer1 = "The distance doubles."
         answer2 = "The distance increases but by less than double."
@@ -40,7 +40,7 @@
         picture = ""
     />
     <question 
-        points = "2"
+        points = "5"
         text = "The picture shows the parabolic trajectory of a golf ball as it flies from the tee to the green. What is the direction of the ball’s acceleration at its highest point in flight?"
         answer1 = "The acceleration is up and to the right."
         answer2 = "The acceleration is down and to the right."

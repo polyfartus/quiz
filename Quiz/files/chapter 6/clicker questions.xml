@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<questions>
+    <question 
+        points = "5"
+        text = "If you push a box across the floor in the positive x direction for 1 meter at a constant velocity with a force of 10N, what is the work done by friction?"
+        answer1 = "10 J"
+        answer2 = "-10 J"
+        answer3 = "0 J"
+        answer4 = "10 J"
+        answer = "2"
+        picture = ""
+    />
+    <question 
+        points = "5"
+        text = "You now change directions and push the box across the floor in the negative x direction for 1 meter at a constant velocity with a force of 10N. What is the work done by friction?"
+        answer1 = "10 J"
+        answer2 = "-10 J"
+        answer3 = "0 J"
+        answer4 = "10 J"
+        answer = "2"
+        picture = ""
+    />
+    <question 
+        points = "5"
+        text = "Two marbles, one twice as heavy as the other, are dropped to the ground from the roof of a building. Just before hitting the ground, the heavier marble has"
+        answer1 = "the same kinetic energy as the lighter one."
+        answer2 = "twice as much kinetic energy as the lighter one."
+        answer3 = "half as much kinetic energy as the lighter one."
+        answer4 = "It is not possible to determine with the information given."
+        answer = "2"
+        picture = ""
+    />
+    <question 
+        points = "5"
+        text = "You are loading boxes onto a truck, and you can either lift the boxes directly onto the back of the truck or slide the boxes up a ramp at an angle theta. How does the work done by you in the two methods compare?"
+        answer1 = "Work 1 is grater than Work 2"
+        answer2 = "Work 1 equals Work 2"
+        answer3 = "Work 1 is less than Work 2"
+        answer4 = "It depends on the angle of the ramp."
+        answer = "2"
+        picture = "files/chapter 6/truck.png"
+    />
+    <question 
+        points = "5"
+        text = "An electric sump pump is rated at 30 watts. About how long will it take to lift 20 kg water vertically 3 meters from your basement?"
+        answer1 = "2 seconds"
+        answer2 = "20 seconds"
+        answer3 = "2 minutes"
+        answer4 = "20 mintues"
+        answer = "2"
+        picture = ""
+    />
+    <question 
+        points = "5"
+        text = "At the bowling alley, a ball-feeder mechanism must exert a force to push the bowling balls up a 1.0 m long ramp. The ramp raises the balls 0.5 m. Approximately how much force must be exerted on a 5.0 kg bowling ball?"
+        answer1 = "200 N"
+        answer2 = "50 N"
+        answer3 = "25 N"
+        answer4 = "5 N"
+        answer = "3"
+        picture = "files/chapter 6/bowling.png"
+    />
+</questions>
+
