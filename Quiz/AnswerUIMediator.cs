@@ -17,6 +17,27 @@ namespace Quiz
             buttons[1] = this.widget.Radiobutton2;
             buttons[2] = this.widget.Radiobutton3;
             buttons[3] = this.widget.Radiobutton4;
+
+            Scramble();
+        }
+
+        void Scramble()
+        {
+            var random = new Random();
+
+            for(int i = 0; i < 4; i++)
+            {
+                int s = random.Next(0, 3);
+
+                Switch(i, s);
+            }
+        }
+
+        void Switch(int left, int right)
+        {
+            var temp = buttons[left];
+            buttons[left] = buttons[right];
+            buttons[right] = temp;
         }
 
         public void ShowQuestion()
