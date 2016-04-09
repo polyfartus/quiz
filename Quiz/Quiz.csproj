@@ -126,5 +126,8 @@
     <None Include="files\chapter 5\clicker questions.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="files\chapter 4\clicker questions.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>

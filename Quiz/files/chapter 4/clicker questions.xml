@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<questions>
+    <question 
+        points = "5"
+        text = "A space shuttle astronaut weighs 800 N on Earth. During the course of a mission his weight will vary. When is the astronaut’s inertia the greatest?"
+        answer1 = "During liftoff."
+        answer2 = "During a spacewalk outside the International Space Station."
+        answer3 = "During re-entry."
+        answer4 = "His inertia does not change throughout the mission."
+        answer = "4"
+        picture = ""
+    />
+    <question 
+        points = "5"
+        text = "A semi-trailer truck is fully loaded with marshmallows. On its next delivery, it is fully loaded with steel bars. When the truck is merging onto the highway, will it take longer for the truck to reach highway speed on the first trip or the second trip?"
+        answer1 = "When the truck is full of marshmallows."
+        answer2 = "When the truck is full of steel."
+        answer3 = "It won’t matter because gravity is constant."
+        answer4 = "When the truck is emply."
+        answer = "2"
+        picture = ""
+    />
+    <question 
+        points = "5"
+        text = "A physics book is setting on the top of a table. An action-reaction force pair involved in this situation is"
+        answer1 = "the force of gravity on the table and the force of the book on the table"
+        answer2 = "the force of gravity on the book and the force of the table on the book"
+        answer3 = "the force of book on the table and the force of the table on the book"
+        answer4 = "the force of the table on the book and the force of friction on the book"
+        answer = "3"
+        picture = ""
+    />
+
+
+</questions>
+
