@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<questions>
+    <question 
+        points = "5"
+        text = "A box is slid across a concrete floor at a constant velocity, v1, with a force F1. If you wanted to slide the box across the floor with a constant velocity twice as large (v2 = 2 * v1 ), how would the force required to keep it moving at this new velocity compare to F1 ?"
+        answer1 = "F2 = 4 * F1"
+        answer2 = "F2 = 2 * F1"
+        answer3 = "F2 = sqrt(F1)"
+        answer4 = "F2 = F1"
+        answer = "4"
+        picture = ""
+    />
+    <question 
+        points = "5"
+        text = "The Moon does not fall to Earth like a rock dropped from my hand because"
+        answer1 = "it is in its own gravitational field."
+        answer2 = "the net force on it is zero."
+        answer3 = "it is beyond the main pull of Earth’s gravity."
+        answer4 = "The Moon actually is falling toward the Earth."
+        answer = "4"
+        picture = ""
+    />
+</questions>
+
