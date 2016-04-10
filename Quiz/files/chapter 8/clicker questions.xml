@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<questions>
+    <question 
+        points = "5"
+        text = "Linear momentum = _____ x ________"
+        answer1 = "mass x velocity"
+        answer2 = "0.5 * mass * velocity^2"
+        answer3 = "mass * height * gravity"
+        answer4 = "0.5 * k * x^2"
+        answer = "1"
+        picture = ""
+    />
+    <question 
+        points = "5"
+        text = "Momentum is a _______"
+        answer1 = "scalar"
+        answer2 = "vector"
+        answer3 = "constant"
+        answer4 = "derivative"
+        answer = "2"
+        picture = ""
+    />
+    <question 
+        points = "5"
+        text = "Units for momentum are ______"
+        answer1 = "kg * m / s"
+        answer2 = "N * s"
+        answer3 = "kg * m^2 / s^2"
+        answer4 = "kg * m / s^2"
+        answer = "1"
+        picture = ""
+    />
+    <question 
+        points = "5"
+        text = "Impulse is the change in _________."
+        answer1 = "energy"
+        answer2 = "force"
+        answer3 = "work"
+        answer4 = "momentum"
+        answer = "4"
+        picture = ""
+    />
+    <question 
+        points = "5"
+        text = "In an elastic collision: ________ is conserved; and _________ is conserved."
+        answer1 = "momentum and kinetic energy"
+        answer2 = "momentum and work"
+        answer3 = "momentum and potential energy"
+        answer4 = "momentum solar energy"
+        answer = "1"
+        picture = ""
+    />
+</questions>
+

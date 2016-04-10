@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<questions>
+    <question 
+        points = "5"
+        text = "arc length = _____ * _______"
+        answer1 = "radius * angle"
+        answer2 = "radius^2"
+        answer3 = "2 * pi / angle"
+        answer4 = "angle / pi"
+        answer = "1"
+        picture = "files/chapter 9/chapter9.png"
+    />
+</questions>
+

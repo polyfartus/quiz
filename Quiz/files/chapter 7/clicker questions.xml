@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<questions>
+    <question 
+        points = "5"
+        text = "The figure shows three different paths to move an object from point A to point B in a gravitational field. For which path does gravity do the least amount of work?"
+        answer1 = "Path #1"
+        answer2 = "Path #2"
+        answer3 = "Path #3"
+        answer4 = "The work is the same for all three paths."
+        answer = "4"
+        picture = "files/chapter 7/question7-1.png"
+    />
+    <question 
+        points = "5"
+        text = "The figure shows three different paths for sliding a box across the floor from point A to point B. For which path does friction do the least amount of work? Assume coeffiecent of kinetic friction = 0.21."
+        answer1 = "Path #1"
+        answer2 = "Path #2"
+        answer3 = "Path #3"
+        answer4 = "The work is the same for all three paths."
+        answer = "2"
+        picture = "files/chapter 7/question7-2.png"
+    />
+    <question 
+        points = "5"
+        text = "The pendulum in the figure has a bob with a mass of 0.33 kg. At point A, the bob is 0.217 m higher than at point B. If point A is the maximum height that the bob reaches, what is the kinetic energy of the bob at point B?"
+        answer1 = "(1.2 m) (0.33 kg) (9.8 m/s^2) = 3.88 J"
+        answer2 = "(0.217m) (0.33 kg) (9.8 m/s^2) = 0.70 J"
+        answer3 = "(1.2 m) (0.33 kg) (9.8 m/s^2) cos 35 degrees = 3.18 J"
+        answer4 = "We don’t know the velocity of the bob at point B, so we cannot find the kinetic energy at point B."
+        answer = "2"
+        picture = "files/chapter 7/question7-3.png"
+    />
+    <question 
+        points = "5"
+        text = "On re-entry, the space shuttle’s protective heat tiles become extremely hot. The mechanical energy of the shuttle-Earth system when the shuttle lands is"
+        answer1 = "greater than when the shuttle is in orbit."
+        answer2 = "the same as when the shuttle is in orbit."
+        answer3 = "less than when the shuttle is in orbit."
+        answer4 = "8000 J"
+        answer = "3"
+        picture = "files/chapter 7/question7-4"
+    />
+    <question 
+        points = "5"
+        text = "The figure shows the potential energy of an object moving along the x-axis without friction. If the object is released from rest at point A, rank the other points in increasing order of the object’s speed."
+        answer1 = "C = E < B = D = F < G"
+        answer2 = "G < F < E < D < C < B"
+        answer3 = "G < F = D = B < E < C"
+        answer4 = "B = D = F < C < E < G"
+        answer = "3"
+        picture = "files/chapter 7/question7-5.png"
+    />
+</questions>
+

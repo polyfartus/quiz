@@ -8,6 +8,8 @@
     <RootNamespace>Quiz</RootNamespace>
     <AssemblyName>Quiz</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>True</DebugSymbols>
@@ -96,6 +98,10 @@
     <Folder Include="files\chapter 4\" />
     <Folder Include="files\chapter 5\" />
     <Folder Include="files\chapter 6\" />
+    <Folder Include="files\chapter 7\" />
+    <Folder Include="files\chapter 8\" />
+    <Folder Include="files\chapter 9\" />
+    <Folder Include="files\chapter 10\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="files\chapter 3\ClickerQuestion3-4.png">
@@ -127,6 +133,18 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="files\chapter 4\clicker questions.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="files\chapter 7\clicker questions.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="files\chapter 8\clicker questions.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="files\chapter 9\clicker questions.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="files\chapter 10\clicker questions.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
