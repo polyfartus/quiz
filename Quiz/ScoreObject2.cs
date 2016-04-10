@@ -12,6 +12,12 @@ namespace Quiz
             set;
         }
 
+        public int LifeLongPoints
+        {
+            get;
+            set;
+        }
+
         public void Save()
         {
             using (var textWriter = File.OpenWrite("score.xml"))
@@ -21,11 +27,14 @@ namespace Quiz
                 writer.WriteStartDocument();
                 writer.WriteStartElement("score");
                 writer.WriteAttributeString("value", "" + this.Points);
+                writer.WriteAttributeString("lifelongValue", "" + this.LifeLongPoints);
                 writer.WriteEndElement();
                 writer.WriteEndDocument();
 
                 writer.Flush();
                 writer.Close();
+
+                textWriter.Flush();
             }        
         }
 
@@ -52,6 +61,13 @@ namespace Quiz
                         if (value != null && value.Trim().Length > 0)
                         {
                             obj.Points = int.Parse(value);
+                        }
+
+                        var lifelongValue = xmlReader.GetAttribute("lifelongValue");
+                        
+                        if (lifelongValue != null && lifelongValue.Trim().Length > 0)
+                        {
+                            obj.LifeLongPoints = int.Parse(lifelongValue);
                         }
                     }
                 }

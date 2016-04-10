@@ -29,7 +29,10 @@ public partial class MainWindow: Gtk.Window
 
         var score = ScoreObject2.Load();
 
-        this.textview1.Buffer.Text = "Points earned todate: " + score.Points;
+        string msg = "Points: " + score.Points +
+            "\nLifelong Points: " + score.LifeLongPoints;
+
+        this.textview1.Buffer.Text = msg;
         this.textview1.Show();
 
         if (path != null)
@@ -87,5 +90,16 @@ public partial class MainWindow: Gtk.Window
         Application.Quit();
 
         this.Destroy();
+    }
+
+    protected void OnButtonResetClicked (object sender, EventArgs e)
+    {
+        var score = ScoreObject2.Load();
+
+        score.Points = 0;
+
+        score.Save();
+
+        EnableButtons();
     }
 }

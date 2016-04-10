@@ -37,6 +37,8 @@ namespace Quiz
 
             score.Points += this.quizwidget2.Quiz.Points;
 
+            score.LifeLongPoints += this.quizwidget2.Quiz.Points;
+
             score.Save();
 
             this.Destroy();
