@@ -5,13 +5,10 @@ namespace Quiz
 	public partial class QuizWindow
 	{
 		private global::Gtk.VBox vbox1;
-		
 		private global::Quiz.QuizWidget quizwidget2;
-		
 		private global::Gtk.HButtonBox hbuttonbox4;
-		
 		private global::Gtk.Button buttonClose;
-
+		
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);

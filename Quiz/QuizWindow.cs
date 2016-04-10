@@ -19,10 +19,10 @@ namespace Quiz
 
         protected void OnButtonCloseClicked (object sender, EventArgs e)
         {
-            var date = new System.DateTime(); 
+            var date = System.DateTime.Now;
 
             string post = "-" + date.ToShortDateString() + 
-                "-" + date.ToShortTimeString() + ".result";
+                "-" + date.Ticks + ".result";
 
             post = post.Replace("/", "-");
 

@@ -2,13 +2,93 @@
 <questions>
     <question 
         points = "5"
-        text = "arc length = _____ * _______"
-        answer1 = "radius * angle"
-        answer2 = "radius^2"
-        answer3 = "2 * pi / angle"
-        answer4 = "angle / pi"
+        text = "Torque is angular _____."
+        answer1 = "force"
+        answer2 = "work"
+        answer3 = "energy"
+        answer4 = "angle"
         answer = "1"
-        picture = "files/chapter 9/chapter9.png"
+        picture = "files/chapter 10/chapter10.png"
+    />
+    <question 
+        points = "5"
+        text = "Torque = Force x ______"
+        answer1 = "radius"
+        answer2 = "distance"
+        answer3 = "height"
+        answer4 = "energy"
+        answer = "1"
+        picture = "files/chapter 10/chapter10.png"
+    />
+    <question 
+        points = "5"
+        text = "Angular ___________ is due to a net torque."
+        answer1 = "velocity"
+        answer2 = "distance"
+        answer3 = "acceleration"
+        answer4 = "energy"
+        answer = "3"
+        picture = ""
+    />
+    <question 
+        points = "5"
+        text = "Torque = moment of inertia x angular acceleration"
+        answer1 = "velocity"
+        answer2 = "distance"
+        answer3 = "angular acceleration"
+        answer4 = "energy"
+        answer = "3"
+        picture = ""
+    />
+    <question 
+        points = "5"
+        text = "You are using a wrench to tighten a nut. Which arrangement will be the most effective in tightening the nut?"
+        answer1 = "A"
+        answer2 = "B"
+        answer3 = "C"
+        answer4 = "D"
+        answer = "2"
+        picture = "files/chapter 10/chapter10-1.png"
+    />
+    <question 
+        points = "5"
+        text = "In which of the cases shown below is the torque provided by the applied force about the door hinge biggest? For all cases the magnitude of the applied force is the same."
+        answer1 = "F1"
+        answer2 = "F3"
+        answer3 = "F4"
+        answer4 = "All of them are the same"
+        answer = "1"
+        picture = "files/chapter 10/chapter10-2.png"
+    />
+    <question 
+        points = "5"
+        text = "A mobile hangs stationary as shown below. The rods are massless and have lengths as indicated. The mass of the ball at the bottom right is 1 kg. What is the total mass of the mobile?"
+        answer1 = "5 kg"
+        answer2 = "6 kg"
+        answer3 = "7 kg"
+        answer4 = "8 kg"
+        answer = "2"
+        picture = "files/chapter 10/chapter10-3.png"
+    />
+    <question 
+        points = "5"
+        text = "A puck on a horizontal, frictionless surface is attached to a string that passes through a hole in the surface. As the puck rotates about the hole, the string is pulled downward, bring the puck closer to the hole. How does the puck’s angular momentum change?"
+        answer1 = "It increases."
+        answer2 = "It decreases."
+        answer3 = "It doesn’t change."
+        answer4 = "It doubles"
+        answer = "3"
+        picture = "files/chapter 10/chapter10-4.png"
+    />
+    <question 
+        points = "5"
+        text = "Two spheres of equal mass and radius roll across the floor with the same speed. Sphere #1 is solid; sphere #2 is hollow. Compare the work required to stop the two spheres."
+        answer1 = "The work to stop sphere #1 is more than the work to stop sphere #2."
+        answer2 = "The work to stop sphere #1 is the same as the work to stop sphere #2."
+        answer3 = "The work to stop sphere #1 is less than the work to stop sphere #2."
+        answer4 = "There is not enough information to figure this out."
+        answer = "3"
+        picture = ""
     />
 </questions>
 

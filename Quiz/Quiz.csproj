@@ -147,5 +147,16 @@
     <None Include="files\chapter 10\clicker questions.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="files\chapter 7\question7-1.png" />
+    <None Include="files\chapter 7\question7-2.png" />
+    <None Include="files\chapter 7\question7-3.png" />
+    <None Include="files\chapter 7\question7-4.png" />
+    <None Include="files\chapter 7\question7-5.png" />
+    <None Include="files\chapter 8\chapter9.png" />
+    <None Include="files\chapter 10\chapter10.png" />
+    <None Include="files\chapter 10\chapter10-4.png" />
+    <None Include="files\chapter 10\question10-1.png" />
+    <None Include="files\chapter 10\question10-2.png" />
+    <None Include="files\chapter 10\question10-3.png" />
   </ItemGroup>
 </Project>
