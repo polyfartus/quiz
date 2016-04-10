@@ -32,7 +32,7 @@
     />
     <question 
         points = "5"
-        text = "Torque = moment of inertia x angular acceleration"
+        text = "Torque = moment of inertia x __________"
         answer1 = "velocity"
         answer2 = "distance"
         answer3 = "angular acceleration"
@@ -48,7 +48,7 @@
         answer3 = "C"
         answer4 = "D"
         answer = "2"
-        picture = "files/chapter 10/chapter10-1.png"
+        picture = "files/chapter 10/question10-1.png"
     />
     <question 
         points = "5"
@@ -58,7 +58,7 @@
         answer3 = "F4"
         answer4 = "All of them are the same"
         answer = "1"
-        picture = "files/chapter 10/chapter10-2.png"
+        picture = "files/chapter 10/question10-2.png"
     />
     <question 
         points = "5"
@@ -68,7 +68,7 @@
         answer3 = "7 kg"
         answer4 = "8 kg"
         answer = "2"
-        picture = "files/chapter 10/chapter10-3.png"
+        picture = "files/chapter 10/question10-3.png"
     />
     <question 
         points = "5"

@@ -43,10 +43,10 @@
     <question 
         points = "5"
         text = "The figure shows the potential energy of an object moving along the x-axis without friction. If the object is released from rest at point A, rank the other points in increasing order of the object’s speed."
-        answer1 = "C = E < B = D = F < G"
-        answer2 = "G < F < E < D < C < B"
-        answer3 = "G < F = D = B < E < C"
-        answer4 = "B = D = F < C < E < G"
+        answer1 = "C = E &gt; B = D = F &gt; G"
+        answer2 = "G &gt; F &gt; E &gt; D &gt; C &gt; B"
+        answer3 = "G &gt; F = D = B &gt; E &gt; C"
+        answer4 = "B = D = F &gt; C &gt; E &gt; G"
         answer = "3"
         picture = "files/chapter 7/question7-5.png"
     />
