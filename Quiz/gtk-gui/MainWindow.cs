@@ -4,14 +4,23 @@
 public partial class MainWindow
 {
 	private global::Gtk.VBox vbox1;
-	private global::Quiz.FilesWidget fileswidget2;
-	private global::Gtk.HBox hbox1;
-	private global::Gtk.TextView textview1;
-	private global::Gtk.HButtonBox hbuttonbox2;
-	private global::Gtk.Button buttonReset;
-	private global::Gtk.Button buttonTake;
-	private global::Gtk.Button buttonClose;
 	
+	private global::Quiz.FilesWidget fileswidget2;
+	
+	private global::Gtk.HBox hbox1;
+	
+	private global::Gtk.HButtonBox hbuttonbox3;
+	
+	private global::Gtk.Button buttonReset;
+	
+	private global::Gtk.TextView textview1;
+	
+	private global::Gtk.HButtonBox hbuttonbox2;
+	
+	private global::Gtk.Button buttonTake;
+	
+	private global::Gtk.Button buttonClose;
+
 	protected virtual void Build ()
 	{
 		global::Stetic.Gui.Initialize (this);
@@ -37,27 +46,35 @@ public partial class MainWindow
 		this.hbox1.Spacing = 6;
 		this.hbox1.BorderWidth = ((uint)(5));
 		// Container child hbox1.Gtk.Box+BoxChild
+		this.hbuttonbox3 = new global::Gtk.HButtonBox ();
+		this.hbuttonbox3.WidthRequest = 20;
+		this.hbuttonbox3.Name = "hbuttonbox3";
+		this.hbuttonbox3.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(3));
+		// Container child hbuttonbox3.Gtk.ButtonBox+ButtonBoxChild
+		this.buttonReset = new global::Gtk.Button ();
+		this.buttonReset.CanFocus = true;
+		this.buttonReset.Name = "buttonReset";
+		this.buttonReset.UseUnderline = true;
+		this.buttonReset.Label = global::Mono.Unix.Catalog.GetString ("Reset");
+		this.hbuttonbox3.Add (this.buttonReset);
+		global::Gtk.ButtonBox.ButtonBoxChild w2 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox3 [this.buttonReset]));
+		w2.Expand = false;
+		w2.Fill = false;
+		this.hbox1.Add (this.hbuttonbox3);
+		global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.hbuttonbox3]));
+		w3.Position = 0;
+		// Container child hbox1.Gtk.Box+BoxChild
 		this.textview1 = new global::Gtk.TextView ();
 		this.textview1.CanFocus = true;
 		this.textview1.Name = "textview1";
 		this.textview1.Editable = false;
 		this.textview1.CursorVisible = false;
 		this.hbox1.Add (this.textview1);
-		global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.textview1]));
-		w2.Position = 0;
+		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.textview1]));
+		w4.Position = 1;
 		// Container child hbox1.Gtk.Box+BoxChild
 		this.hbuttonbox2 = new global::Gtk.HButtonBox ();
 		this.hbuttonbox2.Name = "hbuttonbox2";
-		// Container child hbuttonbox2.Gtk.ButtonBox+ButtonBoxChild
-		this.buttonReset = new global::Gtk.Button ();
-		this.buttonReset.CanFocus = true;
-		this.buttonReset.Name = "buttonReset";
-		this.buttonReset.UseUnderline = true;
-		this.buttonReset.Label = global::Mono.Unix.Catalog.GetString ("Reset");
-		this.hbuttonbox2.Add (this.buttonReset);
-		global::Gtk.ButtonBox.ButtonBoxChild w3 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox2 [this.buttonReset]));
-		w3.Expand = false;
-		w3.Fill = false;
 		// Container child hbuttonbox2.Gtk.ButtonBox+ButtonBoxChild
 		this.buttonTake = new global::Gtk.Button ();
 		this.buttonTake.CanFocus = true;
@@ -65,10 +82,9 @@ public partial class MainWindow
 		this.buttonTake.UseUnderline = true;
 		this.buttonTake.Label = global::Mono.Unix.Catalog.GetString ("Take Quiz");
 		this.hbuttonbox2.Add (this.buttonTake);
-		global::Gtk.ButtonBox.ButtonBoxChild w4 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox2 [this.buttonTake]));
-		w4.Position = 1;
-		w4.Expand = false;
-		w4.Fill = false;
+		global::Gtk.ButtonBox.ButtonBoxChild w5 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox2 [this.buttonTake]));
+		w5.Expand = false;
+		w5.Fill = false;
 		// Container child hbuttonbox2.Gtk.ButtonBox+ButtonBoxChild
 		this.buttonClose = new global::Gtk.Button ();
 		this.buttonClose.CanFocus = true;
@@ -76,20 +92,20 @@ public partial class MainWindow
 		this.buttonClose.UseUnderline = true;
 		this.buttonClose.Label = global::Mono.Unix.Catalog.GetString ("Close");
 		this.hbuttonbox2.Add (this.buttonClose);
-		global::Gtk.ButtonBox.ButtonBoxChild w5 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox2 [this.buttonClose]));
-		w5.Position = 2;
-		w5.Expand = false;
-		w5.Fill = false;
-		this.hbox1.Add (this.hbuttonbox2);
-		global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.hbuttonbox2]));
-		w6.Position = 2;
+		global::Gtk.ButtonBox.ButtonBoxChild w6 = ((global::Gtk.ButtonBox.ButtonBoxChild)(this.hbuttonbox2 [this.buttonClose]));
+		w6.Position = 1;
 		w6.Expand = false;
-		this.vbox1.Add (this.hbox1);
-		global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox1]));
-		w7.Position = 1;
+		w6.Fill = false;
+		this.hbox1.Add (this.hbuttonbox2);
+		global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.hbuttonbox2]));
+		w7.Position = 3;
 		w7.Expand = false;
-		w7.Fill = false;
-		w7.Padding = ((uint)(10));
+		this.vbox1.Add (this.hbox1);
+		global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox1]));
+		w8.Position = 1;
+		w8.Expand = false;
+		w8.Fill = false;
+		w8.Padding = ((uint)(10));
 		this.Add (this.vbox1);
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();

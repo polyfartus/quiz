@@ -84,15 +84,15 @@ namespace Quiz
             TreeIter? parent,
             string name)
         {
-            TreeIter? iter;
+            TreeIter? iter = null;
 
             if (parent != null)
             {
-                iter = store.AppendValues(parent.Value, name);
+                //iter = store.AppendValues(parent.Value, name);
             }
             else
             {
-                iter = store.AppendValues(name);
+                //iter = store.AppendValues(name);
             }
 
             var files = Directory.EnumerateFiles(name);

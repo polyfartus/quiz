@@ -34,25 +34,11 @@
             <property name="Spacing">6</property>
             <property name="BorderWidth">5</property>
             <child>
-              <widget class="Gtk.TextView" id="textview1">
+              <widget class="Gtk.HButtonBox" id="hbuttonbox3">
                 <property name="MemberName" />
-                <property name="CanFocus">True</property>
-                <property name="Editable">False</property>
-                <property name="CursorVisible">False</property>
-                <property name="Text" translatable="yes" />
-              </widget>
-              <packing>
-                <property name="Position">0</property>
-                <property name="AutoSize">True</property>
-              </packing>
-            </child>
-            <child>
-              <placeholder />
-            </child>
-            <child>
-              <widget class="Gtk.HButtonBox" id="hbuttonbox2">
-                <property name="MemberName" />
-                <property name="Size">3</property>
+                <property name="WidthRequest">20</property>
+                <property name="Size">1</property>
+                <property name="LayoutStyle">Start</property>
                 <child>
                   <widget class="Gtk.Button" id="buttonReset">
                     <property name="MemberName" />
@@ -67,6 +53,32 @@
                     <property name="Fill">False</property>
                   </packing>
                 </child>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.TextView" id="textview1">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="Editable">False</property>
+                <property name="CursorVisible">False</property>
+                <property name="Text" translatable="yes" />
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder />
+            </child>
+            <child>
+              <widget class="Gtk.HButtonBox" id="hbuttonbox2">
+                <property name="MemberName" />
+                <property name="Size">2</property>
                 <child>
                   <widget class="Gtk.Button" id="buttonTake">
                     <property name="MemberName" />
@@ -77,7 +89,6 @@
                     <signal name="Clicked" handler="OnButtonTakeClicked" />
                   </widget>
                   <packing>
-                    <property name="Position">1</property>
                     <property name="Expand">False</property>
                     <property name="Fill">False</property>
                   </packing>
@@ -92,14 +103,14 @@
                     <signal name="Clicked" handler="OnButtonCloseClicked" />
                   </widget>
                   <packing>
-                    <property name="Position">2</property>
+                    <property name="Position">1</property>
                     <property name="Expand">False</property>
                     <property name="Fill">False</property>
                   </packing>
                 </child>
               </widget>
               <packing>
-                <property name="Position">2</property>
+                <property name="Position">3</property>
                 <property name="AutoSize">False</property>
                 <property name="Expand">False</property>
               </packing>
@@ -155,6 +166,7 @@
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
                 <property name="Label" translatable="yes">radiobutton1</property>
+                <property name="Active">True</property>
                 <property name="DrawIndicator">True</property>
                 <property name="HasLabel">True</property>
                 <property name="UseUnderline">True</property>
