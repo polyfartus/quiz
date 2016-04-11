@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Xml;
 using System.IO;
+using System.Collections.Generic;
 
 namespace Quiz
 {
@@ -20,6 +21,8 @@ namespace Quiz
 
         public void Save()
         {
+            File.WriteAllLines("score.xml", new List<string>());
+
             using (var textWriter = File.OpenWrite("score.xml"))
             {
                 var writer = XmlWriter.Create(textWriter);
