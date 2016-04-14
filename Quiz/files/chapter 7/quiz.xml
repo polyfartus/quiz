@@ -11,5 +11,49 @@
         picture = ""
         solutionPicture = "files/chapter 7/solution1.png"
     />
+    <question 
+        points = "5"
+        text = "Two identical blocks are released from rest at the top of two frictionless inclined planes, The top of the planes are the same height. One plane makes a 30 degree angle with the horizonal; the other plane makes a 60 degree angle. Which block is going faster when it reaches the bottom?"
+        answer1 = "The block on the 30 degree inclined plane is going faster."
+        answer2 = "The block on the 60 degree inclined plane is going faster."
+        answer3 = "Both blocks have the same speed at the bottom."
+        answer4 = "We must know the masses of the blocks to find the answer."
+        answer = "3"
+        picture = ""
+        solutionPicture = ""
+    />
+    <question 
+        points = "5"
+        text = "A 5 kg box is held 20 m above the ground. The box is dropped, and falls towards the ground. What is the box's speed when it is exactly 8 m above the ground?"
+        answer1 = "12.1 m/s"
+        answer2 = "15.3 m/s"
+        answer3 = "17.7 m/s"
+        answer4 = "19.6 m/s"
+        answer = "2"
+        picture = ""
+        solutionPicture = "files/chapter 7/solution3.png"
+    />
+    <question 
+        points = "5"
+        text = "A block is pushed up a rough incline at constant speed. If the work done by gravity is 196 J and the work done by the pushing force is 368 J, how much work is done by the friction?"
+        answer1 = "172 J"
+        answer2 = "196 J"
+        answer3 = "-368 J"
+        answer4 = "-172 J"
+        answer = "4"
+        picture = ""
+        solutionPicture = "files/chapter 7/solution4.png"
+    />
+    <question 
+        points = "5"
+        text = "A force of 15 N is applied to a spring and it stretches 4 cm. What is the potential energy of the spring in the stretched position?"
+        answer1 = "0.1 J"
+        answer2 = "0.2 J"
+        answer3 = "0.3 J"
+        answer4 = "0.4 J"
+        answer = "3"
+        picture = ""
+        solutionPicture = "files/chapter 7/solution5.png"
+    />
 </questions>
 

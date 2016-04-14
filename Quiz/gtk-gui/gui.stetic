@@ -546,7 +546,7 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Dialog" id="Quiz.PictureDlg" design-size="542 388">
+  <widget class="Gtk.Dialog" id="Quiz.PictureDlg" design-size="542 439">
     <property name="MemberName" />
     <property name="WindowPosition">Center</property>
     <property name="Buttons">1</property>
