@@ -8,7 +8,7 @@ namespace Quiz
         {
             this.Build();
 
-            this.image1.File = path;
+            this.image201.File = path;
         }
     }
 }

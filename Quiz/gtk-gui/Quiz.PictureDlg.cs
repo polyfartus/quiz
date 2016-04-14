@@ -4,34 +4,43 @@ namespace Quiz
 {
 	public partial class PictureDlg
 	{
-		private global::Gtk.Image image1;
-		
+		private global::Gtk.ScrolledWindow scrolledwindow1;
+		private global::Gtk.Image image201;
 		private global::Gtk.Button buttonOk;
-
+		
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);
 			// Widget Quiz.PictureDlg
 			this.Name = "Quiz.PictureDlg";
-			this.Title = global::Mono.Unix.Catalog.GetString ("dialog1");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(1));
 			// Internal child Quiz.PictureDlg.VBox
 			global::Gtk.VBox w1 = this.VBox;
 			w1.Name = "dialog1_VBox";
 			w1.BorderWidth = ((uint)(2));
 			// Container child dialog1_VBox.Gtk.Box+BoxChild
-			this.image1 = new global::Gtk.Image ();
-			this.image1.Name = "image1";
-			w1.Add (this.image1);
-			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(w1 [this.image1]));
-			w2.Position = 0;
-			w2.Padding = ((uint)(2));
+			this.scrolledwindow1 = new global::Gtk.ScrolledWindow ();
+			this.scrolledwindow1.CanFocus = true;
+			this.scrolledwindow1.Name = "scrolledwindow1";
+			this.scrolledwindow1.ShadowType = ((global::Gtk.ShadowType)(1));
+			// Container child scrolledwindow1.Gtk.Container+ContainerChild
+			global::Gtk.Viewport w2 = new global::Gtk.Viewport ();
+			w2.ShadowType = ((global::Gtk.ShadowType)(0));
+			// Container child GtkViewport.Gtk.Container+ContainerChild
+			this.image201 = new global::Gtk.Image ();
+			this.image201.Name = "image201";
+			w2.Add (this.image201);
+			this.scrolledwindow1.Add (w2);
+			w1.Add (this.scrolledwindow1);
+			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(w1 [this.scrolledwindow1]));
+			w5.Position = 0;
+			w5.Padding = ((uint)(2));
 			// Internal child Quiz.PictureDlg.ActionArea
-			global::Gtk.HButtonBox w3 = this.ActionArea;
-			w3.Name = "dialog1_ActionArea";
-			w3.Spacing = 10;
-			w3.BorderWidth = ((uint)(5));
-			w3.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(2));
+			global::Gtk.HButtonBox w6 = this.ActionArea;
+			w6.Name = "dialog1_ActionArea";
+			w6.Spacing = 10;
+			w6.BorderWidth = ((uint)(5));
+			w6.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(2));
 			// Container child dialog1_ActionArea.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonOk = new global::Gtk.Button ();
 			this.buttonOk.CanDefault = true;
@@ -41,9 +50,9 @@ namespace Quiz
 			this.buttonOk.UseUnderline = true;
 			this.buttonOk.Label = "gtk-ok";
 			this.AddActionWidget (this.buttonOk, -5);
-			global::Gtk.ButtonBox.ButtonBoxChild w4 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w3 [this.buttonOk]));
-			w4.Expand = false;
-			w4.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w7 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w6 [this.buttonOk]));
+			w7.Expand = false;
+			w7.Fill = false;
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();
 			}

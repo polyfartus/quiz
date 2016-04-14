@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<questions>
+    <question 
+        points = "5"
+        text = "A 20 kg object is moved from a tabletop 75 cm above the groud to a shelf 1.8 m above the ground. What is the change in the gravitational potential energy of this object?"
+        answer1 = "182 J"
+        answer2 = "206 J"
+        answer3 = "259 J"
+        answer4 = "304 J"
+        answer = "2"
+        picture = ""
+        solutionPicture = "files/chapter 7/solution1.png"
+    />
+</questions>
+

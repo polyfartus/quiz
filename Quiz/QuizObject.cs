@@ -109,6 +109,7 @@ namespace Quiz
                     int.TryParse(xmlReader.GetAttribute("answer"), out test);
                     q.Answer = test;
                     q.Picture = xmlReader.GetAttribute("picture");
+                    q.SolutionPicture = xmlReader.GetAttribute("solutionPicture");
 
                     q.MultipleChoice = true;
                     if (xmlReader.GetAttribute("multipleChoice") != null &&

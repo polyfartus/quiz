@@ -20,10 +20,6 @@ namespace Quiz
             this.textview1.ModifyFont (FontDescription.FromString("Courier 16"));
             this.label1.ModifyFont (FontDescription.FromString("Courier 16"));
             this.textStatus.ModifyFont (FontDescription.FromString("Courier 18"));
-            this.radiobutton1.ModifyFont (FontDescription.FromString("Courier 14"));
-            this.radiobutton2.ModifyFont (FontDescription.FromString("Courier 14"));
-            this.radiobutton3.ModifyFont (FontDescription.FromString("Courier 14"));
-            this.radiobutton4.ModifyFont (FontDescription.FromString("Courier 14"));
 
             this.mediator = new AnswerUIMediator(this);
         }
@@ -37,7 +33,7 @@ namespace Quiz
         {
             get { return this.quiz; }
 
-            set 
+            set
             { 
                 this.quiz = value; 
                 this.current = this.quiz.Questions[0]; 
@@ -93,13 +89,25 @@ namespace Quiz
                 this.buttonCheck.Sensitive = true;
             }
 
-            if (this.current.Picture != null && this.current.Picture.Length > 0)
+            if (this.current.Picture != null && 
+                this.current.Picture.Length > 0)
             {
                 this.buttonPicture.Sensitive = true;
             }
             else
             {
                 this.buttonPicture.Sensitive = false;
+            }
+
+            if (this.current.SolutionPicture != null && 
+                this.current.SolutionPicture.Length > 0 &&
+                this.current.IsChecked)
+            {
+                this.buttonSolution.Sensitive = true;
+            }
+            else
+            {
+                this.buttonSolution.Sensitive = false;
             }
 
             this.mediator.ShowQuestion();
@@ -221,6 +229,17 @@ namespace Quiz
 
             dlg.Run();
 
+            dlg.Destroy();
+        }
+
+        protected void OnButtonSolutionClicked (object sender, EventArgs e)
+        {
+            var dlg = new PictureDlg(this.current.SolutionPicture);
+            
+            dlg.Show();
+            
+            dlg.Run();
+            
             dlg.Destroy();
         }
     }

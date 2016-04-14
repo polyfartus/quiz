@@ -24,6 +24,12 @@ namespace Quiz
             set;
         }
 
+        public string SolutionPicture
+        {
+            get;
+            set;
+        }
+
         public string InputAnswerString
         {
             get;
