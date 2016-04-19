@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <questions>
     <question 
-        points = "5"
+        points = "20"
         text = "Linear momentum = _____ x ________"
         answer1 = "mass x velocity"
         answer2 = "0.5 * mass * velocity^2"
@@ -11,7 +11,7 @@
         picture = ""
     />
     <question 
-        points = "5"
+        points = "20"
         text = "Momentum is a _______"
         answer1 = "scalar"
         answer2 = "vector"
@@ -21,7 +21,7 @@
         picture = ""
     />
     <question 
-        points = "5"
+        points = "20"
         text = "Units for momentum are ______"
         answer1 = "kg * m / s"
         answer2 = "N * s"
@@ -31,7 +31,7 @@
         picture = ""
     />
     <question 
-        points = "5"
+        points = "20"
         text = "Impulse is the change in _________."
         answer1 = "energy"
         answer2 = "force"
@@ -41,7 +41,7 @@
         picture = ""
     />
     <question 
-        points = "5"
+        points = "20"
         text = "In an elastic collision: ________ is conserved; and _________ is conserved."
         answer1 = "momentum and kinetic energy"
         answer2 = "momentum and work"

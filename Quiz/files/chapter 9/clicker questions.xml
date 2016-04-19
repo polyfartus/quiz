@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <questions>
     <question 
-        points = "5"
+        points = "20"
         text = "arc length = _____ * _______"
         answer1 = "radius * angle"
         answer2 = "radius^2"

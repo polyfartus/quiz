@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <questions>
     <question 
-        points = "5"
+        points = "20"
         text = "Torque is angular _____."
         answer1 = "force"
         answer2 = "work"
@@ -11,7 +11,7 @@
         picture = "files/chapter 10/chapter10.png"
     />
     <question 
-        points = "5"
+        points = "20"
         text = "Torque = Force x ______"
         answer1 = "radius"
         answer2 = "distance"
@@ -21,7 +21,7 @@
         picture = "files/chapter 10/chapter10.png"
     />
     <question 
-        points = "5"
+        points = "20"
         text = "Angular ___________ is due to a net torque."
         answer1 = "velocity"
         answer2 = "distance"
@@ -31,7 +31,7 @@
         picture = ""
     />
     <question 
-        points = "5"
+        points = "20"
         text = "Torque = moment of inertia x __________"
         answer1 = "velocity"
         answer2 = "distance"
@@ -41,7 +41,7 @@
         picture = ""
     />
     <question 
-        points = "5"
+        points = "20"
         text = "You are using a wrench to tighten a nut. Which arrangement will be the most effective in tightening the nut?"
         answer1 = "A"
         answer2 = "B"
@@ -51,7 +51,7 @@
         picture = "files/chapter 10/question10-1.png"
     />
     <question 
-        points = "5"
+        points = "20"
         text = "In which of the cases shown below is the torque provided by the applied force about the door hinge biggest? For all cases the magnitude of the applied force is the same."
         answer1 = "F1"
         answer2 = "F3"
@@ -61,7 +61,7 @@
         picture = "files/chapter 10/question10-2.png"
     />
     <question 
-        points = "5"
+        points = "20"
         text = "A mobile hangs stationary as shown below. The rods are massless and have lengths as indicated. The mass of the ball at the bottom right is 1 kg. What is the total mass of the mobile?"
         answer1 = "5 kg"
         answer2 = "6 kg"
@@ -71,7 +71,7 @@
         picture = "files/chapter 10/question10-3.png"
     />
     <question 
-        points = "5"
+        points = "20"
         text = "A puck on a horizontal, frictionless surface is attached to a string that passes through a hole in the surface. As the puck rotates about the hole, the string is pulled downward, bring the puck closer to the hole. How does the puck’s angular momentum change?"
         answer1 = "It increases."
         answer2 = "It decreases."
@@ -81,7 +81,7 @@
         picture = "files/chapter 10/chapter10-4.png"
     />
     <question 
-        points = "5"
+        points = "20"
         text = "Two spheres of equal mass and radius roll across the floor with the same speed. Sphere #1 is solid; sphere #2 is hollow. Compare the work required to stop the two spheres."
         answer1 = "The work to stop sphere #1 is more than the work to stop sphere #2."
         answer2 = "The work to stop sphere #1 is the same as the work to stop sphere #2."
