@@ -3,15 +3,103 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz", "Quiz\Quiz.csproj", "{ACFA1788-97FB-4C0F-926E-75C54150130A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Calc", "Calc", "{0E948627-C9DA-446C-9BA1-57F8BF99AE5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathObjects.Core.Extension", "..\calculator\MathObjects.Core.Extension\MathObjects.Core.Extension.csproj", "{62D67415-88CB-493D-8044-1AEBB8296681}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathObjects.Core.DecoratableObject", "..\calculator\MathObjects.Core.DecoratableObject\MathObjects.Core.DecoratableObject.csproj", "{0179E565-7148-4545-B192-012CCFA83166}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathObjects.Core.Matrix", "..\calculator\MathObjects.Core.Matrix\MathObjects.Core.Matrix.csproj", "{6CE715BF-C2F7-4078-98D0-3B6F605B6AC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathObjects.Core.Matrix.Permutation", "..\calculator\MathObjects.Core.Matrix.Permutation\MathObjects.Core.Matrix.Permutation.csproj", "{13457E87-8AB4-494B-BF43-51B262F954D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathObjects.Core.Plugin", "..\calculator\MathObjects.Core.Plugin\MathObjects.Core.Plugin.csproj", "{DE8FC63B-1B2B-4A04-9A88-3AA3CD1EB456}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathObjects.Framework", "..\calculator\MathObjects.Framework\MathObjects.Framework.csproj", "{C46253F0-D62A-4FFA-9384-1F8BBDE4EB24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathObjects.Framework.Vocabulary", "..\calculator\MathObjects.Framework.Vocabulary\MathObjects.Framework.Vocabulary.csproj", "{5E17A1B1-A904-46C7-8893-2C7DC4CDF65F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathObjects.Framework.Parser", "..\calculator\MathObjects.Framework.Parser\MathObjects.Framework.Parser.csproj", "{5A8DC1C0-6298-49DD-9B02-36EBB0F6C70D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathObjects.Framework.Parser.Visitors", "..\calculator\MathObjects.Framework.Parser.Visitors\MathObjects.Framework.Parser.Visitors.csproj", "{ED54B810-EBC1-48E5-B088-1C29A1712263}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathObjects.Framework.Registry", "..\calculator\MathObjects.Framework.Registry\MathObjects.Framework.Registry.csproj", "{F0D702FD-2C0C-4F45-82CE-B52B87F8737D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathObjects.Plugin.FloatingPoint", "..\calculator\MathObjects.Plugin.FloatingPoint\MathObjects.Plugin.FloatingPoint.csproj", "{BFFB8F5D-939D-41CD-B8F9-527241AAB31C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathObjects.Plugin.FloatingPoint.Tests", "..\calculator\MathObjects.Plugin.FloatingPoint.Tests\MathObjects.Plugin.FloatingPoint.Tests.csproj", "{5C02F33B-D09D-4A41-8A8C-D2207ED77A7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0179E565-7148-4545-B192-012CCFA83166}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0179E565-7148-4545-B192-012CCFA83166}.Debug|x86.Build.0 = Debug|Any CPU
+		{0179E565-7148-4545-B192-012CCFA83166}.Release|x86.ActiveCfg = Release|Any CPU
+		{0179E565-7148-4545-B192-012CCFA83166}.Release|x86.Build.0 = Release|Any CPU
+		{13457E87-8AB4-494B-BF43-51B262F954D8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{13457E87-8AB4-494B-BF43-51B262F954D8}.Debug|x86.Build.0 = Debug|Any CPU
+		{13457E87-8AB4-494B-BF43-51B262F954D8}.Release|x86.ActiveCfg = Release|Any CPU
+		{13457E87-8AB4-494B-BF43-51B262F954D8}.Release|x86.Build.0 = Release|Any CPU
+		{5A8DC1C0-6298-49DD-9B02-36EBB0F6C70D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5A8DC1C0-6298-49DD-9B02-36EBB0F6C70D}.Debug|x86.Build.0 = Debug|Any CPU
+		{5A8DC1C0-6298-49DD-9B02-36EBB0F6C70D}.Release|x86.ActiveCfg = Release|Any CPU
+		{5A8DC1C0-6298-49DD-9B02-36EBB0F6C70D}.Release|x86.Build.0 = Release|Any CPU
+		{5C02F33B-D09D-4A41-8A8C-D2207ED77A7D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5C02F33B-D09D-4A41-8A8C-D2207ED77A7D}.Debug|x86.Build.0 = Debug|Any CPU
+		{5C02F33B-D09D-4A41-8A8C-D2207ED77A7D}.Release|x86.ActiveCfg = Release|Any CPU
+		{5C02F33B-D09D-4A41-8A8C-D2207ED77A7D}.Release|x86.Build.0 = Release|Any CPU
+		{5E17A1B1-A904-46C7-8893-2C7DC4CDF65F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5E17A1B1-A904-46C7-8893-2C7DC4CDF65F}.Debug|x86.Build.0 = Debug|Any CPU
+		{5E17A1B1-A904-46C7-8893-2C7DC4CDF65F}.Release|x86.ActiveCfg = Release|Any CPU
+		{5E17A1B1-A904-46C7-8893-2C7DC4CDF65F}.Release|x86.Build.0 = Release|Any CPU
+		{62D67415-88CB-493D-8044-1AEBB8296681}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{62D67415-88CB-493D-8044-1AEBB8296681}.Debug|x86.Build.0 = Debug|Any CPU
+		{62D67415-88CB-493D-8044-1AEBB8296681}.Release|x86.ActiveCfg = Release|Any CPU
+		{62D67415-88CB-493D-8044-1AEBB8296681}.Release|x86.Build.0 = Release|Any CPU
+		{6CE715BF-C2F7-4078-98D0-3B6F605B6AC9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6CE715BF-C2F7-4078-98D0-3B6F605B6AC9}.Debug|x86.Build.0 = Debug|Any CPU
+		{6CE715BF-C2F7-4078-98D0-3B6F605B6AC9}.Release|x86.ActiveCfg = Release|Any CPU
+		{6CE715BF-C2F7-4078-98D0-3B6F605B6AC9}.Release|x86.Build.0 = Release|Any CPU
 		{ACFA1788-97FB-4C0F-926E-75C54150130A}.Debug|x86.ActiveCfg = Debug|x86
 		{ACFA1788-97FB-4C0F-926E-75C54150130A}.Debug|x86.Build.0 = Debug|x86
 		{ACFA1788-97FB-4C0F-926E-75C54150130A}.Release|x86.ActiveCfg = Release|x86
 		{ACFA1788-97FB-4C0F-926E-75C54150130A}.Release|x86.Build.0 = Release|x86
+		{BFFB8F5D-939D-41CD-B8F9-527241AAB31C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BFFB8F5D-939D-41CD-B8F9-527241AAB31C}.Debug|x86.Build.0 = Debug|Any CPU
+		{BFFB8F5D-939D-41CD-B8F9-527241AAB31C}.Release|x86.ActiveCfg = Release|Any CPU
+		{BFFB8F5D-939D-41CD-B8F9-527241AAB31C}.Release|x86.Build.0 = Release|Any CPU
+		{C46253F0-D62A-4FFA-9384-1F8BBDE4EB24}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C46253F0-D62A-4FFA-9384-1F8BBDE4EB24}.Debug|x86.Build.0 = Debug|Any CPU
+		{C46253F0-D62A-4FFA-9384-1F8BBDE4EB24}.Release|x86.ActiveCfg = Release|Any CPU
+		{C46253F0-D62A-4FFA-9384-1F8BBDE4EB24}.Release|x86.Build.0 = Release|Any CPU
+		{DE8FC63B-1B2B-4A04-9A88-3AA3CD1EB456}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DE8FC63B-1B2B-4A04-9A88-3AA3CD1EB456}.Debug|x86.Build.0 = Debug|Any CPU
+		{DE8FC63B-1B2B-4A04-9A88-3AA3CD1EB456}.Release|x86.ActiveCfg = Release|Any CPU
+		{DE8FC63B-1B2B-4A04-9A88-3AA3CD1EB456}.Release|x86.Build.0 = Release|Any CPU
+		{ED54B810-EBC1-48E5-B088-1C29A1712263}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ED54B810-EBC1-48E5-B088-1C29A1712263}.Debug|x86.Build.0 = Debug|Any CPU
+		{ED54B810-EBC1-48E5-B088-1C29A1712263}.Release|x86.ActiveCfg = Release|Any CPU
+		{ED54B810-EBC1-48E5-B088-1C29A1712263}.Release|x86.Build.0 = Release|Any CPU
+		{F0D702FD-2C0C-4F45-82CE-B52B87F8737D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F0D702FD-2C0C-4F45-82CE-B52B87F8737D}.Debug|x86.Build.0 = Debug|Any CPU
+		{F0D702FD-2C0C-4F45-82CE-B52B87F8737D}.Release|x86.ActiveCfg = Release|Any CPU
+		{F0D702FD-2C0C-4F45-82CE-B52B87F8737D}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{62D67415-88CB-493D-8044-1AEBB8296681} = {0E948627-C9DA-446C-9BA1-57F8BF99AE5B}
+		{0179E565-7148-4545-B192-012CCFA83166} = {0E948627-C9DA-446C-9BA1-57F8BF99AE5B}
+		{6CE715BF-C2F7-4078-98D0-3B6F605B6AC9} = {0E948627-C9DA-446C-9BA1-57F8BF99AE5B}
+		{13457E87-8AB4-494B-BF43-51B262F954D8} = {0E948627-C9DA-446C-9BA1-57F8BF99AE5B}
+		{DE8FC63B-1B2B-4A04-9A88-3AA3CD1EB456} = {0E948627-C9DA-446C-9BA1-57F8BF99AE5B}
+		{C46253F0-D62A-4FFA-9384-1F8BBDE4EB24} = {0E948627-C9DA-446C-9BA1-57F8BF99AE5B}
+		{5E17A1B1-A904-46C7-8893-2C7DC4CDF65F} = {0E948627-C9DA-446C-9BA1-57F8BF99AE5B}
+		{5A8DC1C0-6298-49DD-9B02-36EBB0F6C70D} = {0E948627-C9DA-446C-9BA1-57F8BF99AE5B}
+		{ED54B810-EBC1-48E5-B088-1C29A1712263} = {0E948627-C9DA-446C-9BA1-57F8BF99AE5B}
+		{F0D702FD-2C0C-4F45-82CE-B52B87F8737D} = {0E948627-C9DA-446C-9BA1-57F8BF99AE5B}
+		{BFFB8F5D-939D-41CD-B8F9-527241AAB31C} = {0E948627-C9DA-446C-9BA1-57F8BF99AE5B}
+		{5C02F33B-D09D-4A41-8A8C-D2207ED77A7D} = {0E948627-C9DA-446C-9BA1-57F8BF99AE5B}
 	EndGlobalSection
 EndGlobal

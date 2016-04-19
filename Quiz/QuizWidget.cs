@@ -11,7 +11,7 @@ namespace Quiz
 
         QuestionObject current;
 
-        readonly AnswerUIMediator mediator;
+        readonly DecorationSwitcher mediator;
 
         public QuizWidget ()
         {
@@ -21,7 +21,7 @@ namespace Quiz
             this.label1.ModifyFont (FontDescription.FromString("Courier 16"));
             this.textStatus.ModifyFont (FontDescription.FromString("Courier 18"));
 
-            this.mediator = new AnswerUIMediator(this);
+            this.mediator = new DecorationSwitcher(this);
         }
 
         public QuestionObject Current

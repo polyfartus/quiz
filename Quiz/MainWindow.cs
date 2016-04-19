@@ -13,7 +13,7 @@ public partial class MainWindow: Gtk.Window
 
         this.buttonTake.Sensitive = false;
 
-        this.textview1.ModifyFont(FontDescription.FromString("Courier 16"));
+        this.textview1.ModifyFont(FontDescription.FromString("Courier 14"));
 
         this.fileswidget2.Selected += (sender, e) => 
             {
