@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<questions>
+    <question 
+        points = "50"
+        text = "A Boeing 747 airliner reaches it takeoff speed of {x=(random(100)+200);} km/hr in 35.2 seconds. What is the magnitude of it average acceleration? (in m/s^2)"
+        answer1 = "{(x * 1000 * (1/3600)) / (35.2)}"
+        answer2 = "{x/3.52}"
+        answer3 = "{x/352}"
+        answer4 = "{x/10}"
+        answer = "1"
+    />
+    <question 
+        points = "50"
+        text = "A jet makes a landing traveling due east with a speed of {x=(random(100)+15);} m/s. If the jet comes to rest in 13.0 seconds, what is the magnitude and direction of its average acceleration? (in m/s^2)"
+        answer1 = "{x / 10}"
+        answer2 = "-{x / 13}"
+        answer3 = "{x / 13}"
+        answer4 = "-25"
+        answer = "2"
+    />
+    <question 
+        points = "50"
+        text = "When you see a traffic light turn red, you apply the brakes until you come to a stop. If your initial speed was {x=(random(20));} m/s, and you were heading due west, what was your average velocity during the braking? (in m/s)"
+        answer1 = "{x/2}"
+        answer2 = "{x/3}"
+        answer3 = "{x/4}"
+        answer4 = "-1"
+        answer = "1"
+    />
+    <question 
+        points = "50"
+        text = "On October 9, 1992, a 27 pound meteorite struck a car in Peekskill, NY, leaving a dent 22 cm deep in the trunk. If the meteorite struck the car with a speed of {x=(random(20)+100);} m/s, what was the magnitude of its deceleration, assuming it to be constant?"
+        answer1 = "{(x^2) / (0.22 * 2)}"
+        answer2 = "{(x^2) / (0.10 * 2)}"
+        answer3 = "{(x^2) / (0.32 * 2)}"
+         answer4 = "{(x^2) / (0.12 * 2)}"
+        answer = "1"
+    />
+    <question 
+        points = "50"
+        text = "Michael Jordan’s vertical leap was reported to be {x=1+(random(22)/100)} meters. What was his takeoff speed? Give your answer in meters/second."
+        answer1 = "{sqrt(2 * 9.8 * x)}"
+        answer2 = "{2 * 9.8 * x}"
+        answer3 = "{sqrt(9.8 * x)}"
+        answer4 = "{sqrt(2 * 9.8)}"
+        answer = "1"
+    />
+</questions>
+
