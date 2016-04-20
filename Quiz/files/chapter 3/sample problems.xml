@@ -1,27 +1,57 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <questions>
     <question 
-        points = "0"
-        text = "A sailboat runs before the wind with a constant speed of 3.2 m/s in a direction 42 degrees north of west. How far west has the sailboat traveled in 25 minutes?"
-        answer1 = "3567"
-        multipleChoice = "false"
+        points = "50"
+        text = "A sailboat runs before the wind with a constant speed of {x=random(10);} m/s in a direction 42 degrees north of west. How far west has the sailboat traveled in 25 minutes?"
+        answer1 = "{x * cos(42) * ( 25 )}"
+        answer2 = "{x * cos(42) * ( 25 / 60 )}"
+        answer3 = "{x * ( 25 * 60 )}"
+        answer4 = "{x * cos(42) * ( 25 * 60 )}"
+        answer = "4"
+        solutionPicture = "files/chapter 3/question1.png"
     />
     <question 
-        points = "0"
-        text = "Playing shortstop, you pick up a ground ball and throw it to second base. The ball is thrown horizontally, with a speed of 22 m/s directly toward point A. When the ball reaches the second baseman 0.45 seconds later, it is caught at point B. How far were you from the second baseman?"
-        answer1 = "9.9"
-        multipleChoice = "false"
+        points = "25"
+        text = "Playing shortstop, you pick up a ground ball and throw it to second base. The ball is thrown horizontally, with a speed of {x=10+random(10);} m/s directly toward point A. When the ball reaches the second baseman 0.45 seconds later, it is caught at point B. How far were you from the second baseman?"
+        answer1 = "{x*0.22}"
+        answer2 = "{x*0.2}"
+        answer3 = "{x*0.3}"
+        answer4 = "{x*0.1}"
+        answer = "1"
+        solutionPicture = "files/chapter 3/question2.png"
         picture = "files/chapter 3/baseball.png"
     />
     <question 
-        points = "0"
-        text = "On a hot summer day, a young girl swings on a rope above the local swimming hole. When she lets go of the rope her initial velocity is 2.25 m/s at an angle of 35.0 degrees above the horizontal. If she is in flight for 0.616 s, how high above the water was she when she let go of the rope?"
-        answer1 = "0.085"
-        multipleChoice = "false"
-        picture = "files/chapter 3/summer day.png"
+        points = "25"
+        text = "Playing shortstop, you pick up a ground ball and throw it to second base. The ball is thrown horizontally, with a speed of {x=10+random(10);} m/s directly toward point A. When the ball reaches the second baseman {x=((10+random(50))/10)} seconds later, it is caught at point B. What is the distance of vertical drop?"
+        answer1 = "{9.8*x^2}"
+        answer2 = "{0.5*9.8*x^2}"
+        answer3 = "{0.5*9.8*x}"
+        answer4 = "{-0.5*9.8*x^2}"
+        answer = "2"
+        solutionPicture = "files/chapter 3/question3.png"
+        picture = "files/chapter 3/baseball.png"
     />
-    
-    
-</questions>
+    <question 
+        points = "50"
+        text = "On a hot summer day, a young girl swings on a rope above the local swimming hole. When she lets go of the rope her initial velocity is {x=1+random(4);} m/s at an angle of 35 degrees above the horizontal. If she is in flight for 0.616 s, how high above the water was she when she let go of the rope?"
+        answer1 = "{0.5*9.8*0.616^2+sin(35)*x}"
+        answer2 = "{0.5*9.8*0.616^2-x}"
+        answer3 = "{0.5*9.8*0.616^2-sin(35)*x}"
+        answer4 = "{9.8*0.616-sin(35)*x}"
+        answer = "3"
+        solutionPicture = "files/chapter 3/question4.png"
+    />
+    <question 
+        points = "50"
+        text = "Astronomers have discovered volcanoes on Io, a moon of Jupiter. One of them, named Loki, ejects lava to a maximum height of {x=(2+random(5))*100000;} m. What is the initial speed of the lava? (The acceleration of gravity on Io is 1.8 m/s^2.)"
+        answer1 = "{sqrt(2*1.8*x)}"
+        answer2 = "{sqrt(2*9.8*x)}"
+        answer3 = "{2*1.8*x}"
+        answer4 = "{sqrt(1.8*x)}"
+        answer = "1"
+        solutionPicture = "files/chapter 3/question5.png"
+    />
+ </questions>
 
 
