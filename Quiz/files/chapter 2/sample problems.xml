@@ -14,7 +14,7 @@
         points = "50"
         text = "A jet makes a landing traveling due east with a speed of {x=(random(100)+15);} m/s. If the jet comes to rest in 13.0 seconds, what is the magnitude and direction of its average acceleration? (in m/s^2)"
         answer1 = "{x / 10}"
-        answer2 = "-{x / 13}"
+        answer2 = "-{x / 13)}"
         answer3 = "{x / 13}"
         answer4 = "-25"
         answer = "2"

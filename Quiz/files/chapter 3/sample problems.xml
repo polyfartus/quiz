@@ -2,18 +2,18 @@
 <questions>
     <question 
         points = "50"
-        text = "A sailboat runs before the wind with a constant speed of {x=random(10);} m/s in a direction 42 degrees north of west. How far west has the sailboat traveled in 25 minutes?"
+        text = "A sailboat runs before the wind with a constant speed of {x=1+random(9);} m/s in a direction 42 degrees north of west. How far west has the sailboat traveled in 25 minutes?"
         answer1 = "{x * cos(42) * ( 25 )}"
-        answer2 = "{x * cos(42) * ( 25 / 60 )}"
+        answer2 = "{x * cos(42) * ( 25 * random(3) )}"
         answer3 = "{x * ( 25 * 60 )}"
-        answer4 = "{x * cos(42) * ( 25 * 60 )}"
+        answer4 = "{x * cos(42) * (25 * 60)}"
         answer = "4"
         solutionPicture = "files/chapter 3/question1.png"
     />
     <question 
         points = "25"
         text = "Playing shortstop, you pick up a ground ball and throw it to second base. The ball is thrown horizontally, with a speed of {x=10+random(10);} m/s directly toward point A. When the ball reaches the second baseman 0.45 seconds later, it is caught at point B. How far were you from the second baseman?"
-        answer1 = "{x*0.22}"
+        answer1 = "{x*0.45}"
         answer2 = "{x*0.2}"
         answer3 = "{x*0.3}"
         answer4 = "{x*0.1}"
