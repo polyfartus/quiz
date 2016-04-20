@@ -8,6 +8,7 @@
         answer3 = "{x/352}"
         answer4 = "{x/10}"
         answer = "1"
+        solutionPicture = "files/chapter 2/question1.png"
     />
     <question 
         points = "50"
@@ -17,6 +18,7 @@
         answer3 = "{x / 13}"
         answer4 = "-25"
         answer = "2"
+        solutionPicture = "files/chapter 2/question2.png"
     />
     <question 
         points = "50"
@@ -26,6 +28,7 @@
         answer3 = "{x/4}"
         answer4 = "-1"
         answer = "1"
+        solutionPicture = "files/chapter 2/question3.png"
     />
     <question 
         points = "50"
@@ -33,8 +36,9 @@
         answer1 = "{(x^2) / (0.22 * 2)}"
         answer2 = "{(x^2) / (0.10 * 2)}"
         answer3 = "{(x^2) / (0.32 * 2)}"
-         answer4 = "{(x^2) / (0.12 * 2)}"
+        answer4 = "{(x^2) / (0.12 * 2)}"
         answer = "1"
+        solutionPicture = "files/chapter 2/question4.png"
     />
     <question 
         points = "50"
@@ -44,6 +48,7 @@
         answer3 = "{sqrt(9.8 * x)}"
         answer4 = "{sqrt(2 * 9.8)}"
         answer = "1"
+        solutionPicture = "files/chapter 2/question5.png"
     />
 </questions>
 
