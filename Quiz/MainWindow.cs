@@ -5,6 +5,7 @@ using System.Xml;
 using System.IO;
 using Pango;
 using MathObjects.Plugin.FloatingPoint;
+using MathObjects.Framework.Parser;
 
 public partial class MainWindow: Gtk.Window
 {
