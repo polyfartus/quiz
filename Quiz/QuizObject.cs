@@ -143,11 +143,25 @@ namespace Quiz
             var stack = new MathObjectStack();
             var scope = new MathScope();
 
+            System.Diagnostics.Debug.WriteLine(q.Text);
             q.Text = Parse(parser, stack, scope, q.Text);
+            System.Diagnostics.Debug.WriteLine(q.Text);
+
+            System.Diagnostics.Debug.WriteLine(q.Answer1);
             q.Answer1 = Parse(parser, stack, scope, q.Answer1);
+            System.Diagnostics.Debug.WriteLine(q.Answer1);
+
+            System.Diagnostics.Debug.WriteLine(q.Answer2);
             q.Answer2 = Parse(parser, stack, scope, q.Answer2);
+            System.Diagnostics.Debug.WriteLine(q.Answer2);
+
+            System.Diagnostics.Debug.WriteLine(q.Answer3);
             q.Answer3 = Parse(parser, stack, scope, q.Answer3);
+            System.Diagnostics.Debug.WriteLine(q.Answer3);
+
+            System.Diagnostics.Debug.WriteLine(q.Answer4);
             q.Answer4 = Parse(parser, stack, scope, q.Answer4);
+            System.Diagnostics.Debug.WriteLine(q.Answer4);
 
             return q;
         }

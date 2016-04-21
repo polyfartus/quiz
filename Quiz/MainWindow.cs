@@ -4,6 +4,7 @@ using Quiz;
 using System.Xml;
 using System.IO;
 using Pango;
+using MathObjects.Plugin.FloatingPoint;
 
 public partial class MainWindow: Gtk.Window
 {
@@ -60,8 +61,6 @@ public partial class MainWindow: Gtk.Window
 
     protected void OnButtonTakeClicked (object sender, EventArgs e)
     {
-        var win = new QuizWindow();
-
         var selected = this.fileswidget2.SelectedPath;
 
         if (selected != null)
@@ -70,17 +69,36 @@ public partial class MainWindow: Gtk.Window
 
             if (File.Exists(path))
             {
-                using (TextReader reader = File.OpenText(path))
+                try
                 {
-                    win.Quiz = QuizObject.LoadQuiz(reader, path);
-                }
+                    QuizObject obj = null;
 
-                win.ShowNow();
+                    using (TextReader reader = File.OpenText(path))
+                    {
+                        obj = QuizObject.LoadQuiz(reader, path);
+                    }
 
-                win.Hidden += (sender2, e2) => 
+                    var win = new QuizWindow();
+                    win.Quiz = obj;
+
+                    win.ShowNow();
+
+                    win.Hidden += (sender2, e2) => 
                     {
                         this.EnableButtons();
                     };
+                }
+                catch (ParserException e2)
+                {
+                    var msg = e2.Descriptions[0].ToString();
+
+                    var dlg = new Gtk.MessageDialog(
+                                  this, DialogFlags.DestroyWithParent, MessageType.Error, 
+                        ButtonsType.Close, "{0}", msg);
+
+                    dlg.Run();
+                    dlg.Destroy();
+                }
             }
         }
     }

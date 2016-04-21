@@ -8,8 +8,6 @@
     <RootNamespace>Quiz</RootNamespace>
     <AssemblyName>Quiz</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <ProductVersion>12.0.0</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>True</DebugSymbols>
@@ -276,5 +274,10 @@
       <Project>{BFFB8F5D-939D-41CD-B8F9-527241AAB31C}</Project>
       <Name>MathObjects.Plugin.FloatingPoint</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="quiz.desktop">
+      <DeployService-TargetDirectoryId>Linux.DesktopApplications</DeployService-TargetDirectoryId>
+    </Content>
   </ItemGroup>
 </Project>
