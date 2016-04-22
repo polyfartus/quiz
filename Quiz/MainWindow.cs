@@ -79,8 +79,7 @@ public partial class MainWindow: Gtk.Window
                         obj = QuizObject.LoadQuiz(reader, path);
                     }
 
-                    var win = new QuizWindow();
-                    win.Quiz = obj;
+                    var win = new QuizWindow(obj);
 
                     win.ShowNow();
 

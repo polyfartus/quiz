@@ -4,17 +4,20 @@ namespace Quiz
 {
     public partial class QuizWindow : Gtk.Window
     {
-        public QuizWindow()
+        readonly QuizObject quiz;
+
+        public QuizWindow(QuizObject quiz)
             : base(Gtk.WindowType.Toplevel)
         {
             this.Build();
+
+            this.quiz = quiz;
+            this.quizwidget2.Quiz = quiz;
         }
 
         public QuizObject Quiz
         {
-            get { return this.quizwidget2.Quiz; }
-
-            set { this.quizwidget2.Quiz = value; }
+            get { return this.quiz; }
         }
 
         protected void OnButtonCloseClicked (object sender, EventArgs e)

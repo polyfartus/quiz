@@ -8,7 +8,7 @@
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <widget-library name="../bin/Debug/Quiz.exe" internal="true" />
   </import>
-  <widget class="Gtk.Window" id="MainWindow" design-size="565 422">
+  <widget class="Gtk.Window" id="MainWindow" design-size="449 330">
     <property name="MemberName" />
     <property name="Title" translatable="yes">Quiz</property>
     <property name="Icon">stock:gtk-edit Menu</property>
@@ -166,7 +166,6 @@
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
                 <property name="Label" translatable="yes">radiobutton1</property>
-                <property name="Active">True</property>
                 <property name="DrawIndicator">True</property>
                 <property name="HasLabel">True</property>
                 <property name="UseUnderline">True</property>
