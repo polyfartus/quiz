@@ -5,10 +5,13 @@ namespace Quiz
 	public partial class QuizWindow
 	{
 		private global::Gtk.VBox vbox1;
-		private global::Quiz.QuizWidget quizwidget2;
-		private global::Gtk.HButtonBox hbuttonbox4;
-		private global::Gtk.Button buttonClose;
 		
+		private global::Quiz.QuizWidget quizwidget2;
+		
+		private global::Gtk.HButtonBox hbuttonbox4;
+		
+		private global::Gtk.Button buttonClose;
+
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);
@@ -53,8 +56,8 @@ namespace Quiz
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();
 			}
-			this.DefaultWidth = 513;
-			this.DefaultHeight = 359;
+			this.DefaultWidth = 585;
+			this.DefaultHeight = 431;
 			this.Show ();
 			this.buttonClose.Clicked += new global::System.EventHandler (this.OnButtonCloseClicked);
 		}

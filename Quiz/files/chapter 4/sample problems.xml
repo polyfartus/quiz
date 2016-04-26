@@ -22,4 +22,15 @@
         picture = "files/chapter 4/image2.png"
         solutionPicture = "files/chapter 4/question2.png"
     />
+    <question 
+        points = "50"
+        text = "Two crewmen pull a raft through a lock. One crewman pulls with a force of 130 N at an angle of {x=25+random(10)} degrees relative to the forward direction of the raft. The second crewman, on the opposite side of the lock pulls at an angle of 45 degrees With what force should the second crewman pull so that the net force of the two crewmen is in the forward direction?"
+        answer1 = "{(sin(x)*130) + (cos(x)*130) + (1+random(3)) }"
+        answer2 = "{(sin(x)*130) + (cos(x)*130) }"
+        answer3 = "{(sin(x)*130) + (cos(x)*130) + (1+random(3))}"
+        answer4 = "{(sin(x)*130) + (cos(x)*130) - (1+random(3))}"
+        answer = "2"
+        picture = "files/chapter 4/image3.png"
+        solutionPicture = "files/chapter 4/question3.png"
+    />
 </questions>
