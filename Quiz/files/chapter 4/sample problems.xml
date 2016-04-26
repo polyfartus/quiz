@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<questions>
+    <question 
+        points = "50"
+        text = "A baseball pitcher accelerates a {x=100+random(100)} gram ball from rest to 98 mph (43.81 m/s) in a distance of 1.7 meters. What is average force exerted on the ball during the pitch?"
+        answer1 = "{(43.81^2/(2*1.7))*(x/1000)}"
+        answer2 = "{(43.81^2/(1.7))*(x/1000)}"
+        answer3 = "{(43.81/(2*1.7))*(x/1000)}"
+        answer4 = "{(43.81^2/(2*1.7))*((x-10)/1000)}"
+        answer = "1"
+        picture = ""
+        solutionPicture = "files/chapter 4/question1.png"
+    />
+    <question 
+        points = "50"
+        text = "A force of magnitude {x=5+random(10)} N pushes three boxes with masses 1.3 kg, 3.2 kg, and 4.9 kg, as shown in the figure. Find the magnitude of the contact force between boxes 1 and 2"
+        answer1 = "{((x/9.4) * 1.3) + (1+random(5))}"
+        answer2 = "{((x/9.4) * 1.3) - (1+random(5))}"
+        answer3 = "{((x/9.4) * 1.3) + (1+random(5))}"
+        answer4 = "{((x/9.4) * 1.3)}"
+        answer = "4"
+        picture = "files/chapter 4/image2.png"
+        solutionPicture = "files/chapter 4/question2.png"
+    />
+</questions>

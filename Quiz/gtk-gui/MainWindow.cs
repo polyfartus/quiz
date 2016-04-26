@@ -4,15 +4,23 @@
 public partial class MainWindow
 {
 	private global::Gtk.VBox vbox1;
-	private global::Quiz.FilesWidget fileswidget2;
-	private global::Gtk.HBox hbox1;
-	private global::Gtk.HButtonBox hbuttonbox3;
-	private global::Gtk.Button buttonReset;
-	private global::Gtk.TextView textview1;
-	private global::Gtk.HButtonBox hbuttonbox2;
-	private global::Gtk.Button buttonTake;
-	private global::Gtk.Button buttonClose;
 	
+	private global::Quiz.FilesWidget fileswidget2;
+	
+	private global::Gtk.HBox hbox1;
+	
+	private global::Gtk.HButtonBox hbuttonbox3;
+	
+	private global::Gtk.Button buttonReset;
+	
+	private global::Gtk.TextView textview1;
+	
+	private global::Gtk.HButtonBox hbuttonbox2;
+	
+	private global::Gtk.Button buttonTake;
+	
+	private global::Gtk.Button buttonClose;
+
 	protected virtual void Build ()
 	{
 		global::Stetic.Gui.Initialize (this);
@@ -102,8 +110,8 @@ public partial class MainWindow
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();
 		}
-		this.DefaultWidth = 449;
-		this.DefaultHeight = 330;
+		this.DefaultWidth = 641;
+		this.DefaultHeight = 434;
 		this.Show ();
 		this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
 		this.buttonReset.Clicked += new global::System.EventHandler (this.OnButtonResetClicked);
