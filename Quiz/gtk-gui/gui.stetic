@@ -467,7 +467,7 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="Quiz.QuizWindow" design-size="513 359">
+  <widget class="Gtk.Window" id="Quiz.QuizWindow" design-size="585 431">
     <property name="MemberName" />
     <property name="Title" translatable="yes">QuizWindow</property>
     <property name="WindowPosition">CenterOnParent</property>
