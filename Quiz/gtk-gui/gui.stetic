@@ -534,6 +534,7 @@
               <widget class="Gtk.TreeView" id="treeview1">
                 <property name="MemberName" />
                 <property name="CanFocus">True</property>
+                <signal name="ButtonPressEvent" handler="OnTreeview1ButtonPressEvent" />
               </widget>
             </child>
           </widget>

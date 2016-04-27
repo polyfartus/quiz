@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<questions>
+    <question 
+        points = "50"
+        text = "To move a large crate across a rough floor, you push on it with a force F at an angle 21 degrees below the horizontal. Find the force necessary to move the crate at a constant velocity, given that the mass of the crate is {x=30+random(10)} kg and coefficient of kinetic friction between the crate and the floor is 0.23."
+        answer1 = "{(9.8*x*0.23)/cos(21) + 1+random(4)}"
+        answer2 = "{(9.8*x*0.23)/cos(21)}"
+        answer3 = "{(9.8*x*0.23)/cos(21) - 1+random(4)}"
+        answer4 = "{(9.8*x*0.23)/cos(21) + 1+random(4)}"
+        answer = "2"
+        picture = "files/chapter 5/image1.png"
+        solutionPicture = "files/chapter 5/question1.png"
+    />
+    <question 
+        points = "50"
+        text = "Two blocks are connected by a string, as shown in the figure. The smooth inclined surface makes an angle of 42 degrees with the horizontal, and the block on the inclined plane has a mass of {x=5+random(5)} kg. Find the mass of the hanging block that will cause the system to be in equilibrium."
+        answer1 = "{cos(42)*x}"
+        answer2 = "{cos(44)*x}"
+        answer3 = "{cos(46)*x}"
+        answer4 = "{cos(3)*x}"
+        answer = "1"
+        picture = "files/chapter 5/image2.png"
+        solutionPicture = "files/chapter 5/question2.png"
+    />
+    <question 
+        points = "50"
+        text = "Find the tension in the string connecting m1 and m2. m1=1, m2=2, m3={x=2+random(8)}"
+        answer1 = "{(x*9.8)/(3+x)}"
+        answer2 = "{((x*9.8)/(3+x))+1}"
+        answer3 = "{((x*9.8)/(3+x))+2}"
+        answer4 = "{((x*9.8)/(3+x))-0.5}"
+        answer = "1"
+        picture = "files/chapter 5/image3.png"
+        solutionPicture = "files/chapter 5/question3.png"
+    />
+</questions>

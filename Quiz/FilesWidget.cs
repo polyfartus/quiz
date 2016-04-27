@@ -135,6 +135,10 @@ namespace Quiz
                 }
             }
         }
+
+        protected void OnTreeview1ButtonPressEvent(object o, ButtonPressEventArgs args)
+        {
+        }
     }
 }
 
