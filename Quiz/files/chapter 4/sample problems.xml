@@ -33,4 +33,15 @@
         picture = "files/chapter 4/image3.png"
         solutionPicture = "files/chapter 4/question3.png"
     />
+    <question 
+        points = "50"
+        text = "Suppose that a rocket launches with an acceleration of 30.2 m/s^2 . What is the apparent weight of an {x=50+random(50)} kg astronaut aboard this rocket?"
+        answer1 = "{x*(30.2+9.8)}"
+        answer2 = "{x*(30.2+9.8) + (1+random(10))}"
+        answer3 = "{x*(30.2+9.8) - (1+random(10))}"
+        answer4 = "{x*(30.2+9.8) + (1+random(10))}"
+        answer = "1"
+        picture = ""
+        solutionPicture = "files/chapter 4/question4.png"
+    />
 </questions>
