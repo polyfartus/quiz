@@ -270,6 +270,12 @@
     <None Include="files\chapter 5\question3.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="files\chapter 5\image4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="files\chapter 5\question4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\calculator\MathObjects.Core.DecoratableObject\MathObjects.Core.DecoratableObject.csproj">

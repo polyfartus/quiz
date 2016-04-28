@@ -14,10 +14,10 @@
     <question 
         points = "50"
         text = "Two blocks are connected by a string, as shown in the figure. The smooth inclined surface makes an angle of 42 degrees with the horizontal, and the block on the inclined plane has a mass of {x=5+random(5)} kg. Find the mass of the hanging block that will cause the system to be in equilibrium."
-        answer1 = "{cos(42)*x}"
-        answer2 = "{cos(44)*x}"
-        answer3 = "{cos(46)*x}"
-        answer4 = "{cos(3)*x}"
+        answer1 = "{sin(42)*x}"
+        answer2 = "{sin(44)*x}"
+        answer3 = "{sin(46)*x}"
+        answer4 = "{sin(3)*x}"
         answer = "1"
         picture = "files/chapter 5/image2.png"
         solutionPicture = "files/chapter 5/question2.png"
@@ -32,5 +32,16 @@
         answer = "1"
         picture = "files/chapter 5/image3.png"
         solutionPicture = "files/chapter 5/question3.png"
+    />
+    <question 
+        points = "50"
+        text = "Find the linear speed of the bottom of a test tube in a centrifuge if the centripetal acceleration there is 52,000 times the acceleration of gravity. The distance from the axis of rotation to the bottom of the test tube is {x=4+random(4)} cm."
+        answer1 = "{sqrt(52000*(x/100))}"
+        answer2 = "{52000*x}"
+        answer3 = "{sqrt(52*(x/100))}"
+        answer4 = "{sqrt(52000*x)}"
+        answer = "1"
+        picture = "files/chapter 5/image4.png"
+        solutionPicture = "files/chapter 5/question4.png"
     />
 </questions>
