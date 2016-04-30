@@ -178,9 +178,7 @@
     <None Include="files\chapter 10\question10-3.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="files\chapter 7\quiz.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="files\chapter 7\quiz.xml" />
     <None Include="files\chapter 7\solution1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -276,6 +274,7 @@
     <None Include="files\chapter 5\question4.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="files\chapter 2\quiz.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\calculator\MathObjects.Core.DecoratableObject\MathObjects.Core.DecoratableObject.csproj">

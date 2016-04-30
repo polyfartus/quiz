@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<questions>
+    <question 
+        points = "50"
+        text = "The Hope Diamond weights 44.5 carats. There are 200 mg per carat. How are 200 mg per carat. How many kilograms does the Hope Diamond weigh?"
+        answer1 = "{(x * 1000 * (1/3600)) / (35.2)}"
+        answer2 = "{x/3.52}"
+        answer3 = "{x/352}"
+        answer4 = "{x/10}"
+        answer = "1"
+        solutionPicture = "files/chapter 2/question1.png"
+    />
+</questions>
+
