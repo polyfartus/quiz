@@ -17,9 +17,12 @@ namespace Quiz
         {
             this.Build ();
 
-            this.textview1.ModifyFont (FontDescription.FromString("Courier 16"));
-            this.label1.ModifyFont (FontDescription.FromString("Courier 16"));
-            this.textStatus.ModifyFont (FontDescription.FromString("Courier 18"));
+            this.textview1.ModifyFont(
+                FontDescription.FromString("Courier 16"));
+            this.label1.ModifyFont(
+                FontDescription.FromString("Courier 18"));
+            this.textStatus.ModifyFont(
+                FontDescription.FromString("Courier 18"));
 
             this.mediator = new DecorationSwitcher(this);
         }

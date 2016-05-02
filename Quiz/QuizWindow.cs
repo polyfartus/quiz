@@ -13,6 +13,7 @@ namespace Quiz
 
             this.quiz = quiz;
             this.quizwidget2.Quiz = quiz;
+
         }
 
         public QuizObject Quiz

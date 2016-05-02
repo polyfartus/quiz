@@ -23,6 +23,9 @@ public partial class MainWindow: Gtk.Window
             };
 
         EnableButtons();
+
+        this.Move(0, 0);
+        this.Resize(Screen.Width - 110, Screen.Height - 110);
     }
 
     void EnableButtons()
@@ -80,6 +83,9 @@ public partial class MainWindow: Gtk.Window
                     }
 
                     var win = new QuizWindow(obj);
+
+                    win.Move(0, 0);
+                    win.Resize(Screen.Width - 110, Screen.Height - 110);
 
                     win.ShowNow();
 
