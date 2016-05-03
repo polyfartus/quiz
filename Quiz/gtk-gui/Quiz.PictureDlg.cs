@@ -5,9 +5,11 @@ namespace Quiz
 	public partial class PictureDlg
 	{
 		private global::Gtk.ScrolledWindow scrolledwindow1;
-		private global::Gtk.Image image201;
-		private global::Gtk.Button buttonOk;
 		
+		private global::Gtk.Image image201;
+		
+		private global::Gtk.Button buttonOk;
+
 		protected virtual void Build ()
 		{
 			global::Stetic.Gui.Initialize (this);

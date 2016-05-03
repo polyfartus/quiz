@@ -89,6 +89,9 @@ public partial class MainWindow: Gtk.Window
 
                     win.ShowNow();
 
+                    win.Move(0, 0);
+                    win.Resize(Screen.Width - 110, Screen.Height - 110);
+
                     win.Hidden += (sender2, e2) => 
                     {
                         this.EnableButtons();
